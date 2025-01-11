@@ -42,11 +42,12 @@ ul {
 }
 
 .arxiv-link {
-    color: #f8f8ff; /* White text color */
-    background-color: #b31b1b; /* arXiv red background */
+    color: #f8f8ff;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: #b31b1b;
     padding: 5px 10px;
     border-radius: 4px;
-    text-decoration: none;
     transition: background-color 0.3s;
 }
 
