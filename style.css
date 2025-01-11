@@ -41,7 +41,7 @@ ul {
     background-color: #9e9e9e;
 }
 
-.arxiv-link a {
+.arxiv-links a {
     color: #f8f8ff;
     text-decoration: none;
     margin-right: 10px;
@@ -51,7 +51,7 @@ ul {
     transition: background-color 0.3s;
 }
 
-.arxiv-link a:hover {
+.arxiv-links a:hover {
     background-color: #8a1515; /* Darker shade for hover effect */
 }
 
