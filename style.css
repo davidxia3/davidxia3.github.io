@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     margin: 20px;
     background-color: #f8f8ff;
@@ -9,12 +9,19 @@ body {
 h1 {
     color: #000000;
     text-align: center;
+    font-family: 'TeX Gyre Termes', serif;
 }
 h2 {
     color: #2b2b2b;
+    font-family: 'TeX Gyre Termes', serif;
 }
 h3 {
     color: #2b2b2b;
+    font-family: 'TeX Gyre Termes', serif;
+}
+
+code {
+    font-family: 'STIX', monospace;
 }
 
 ul {
@@ -38,8 +45,8 @@ ul {
     text-decoration: none;
     margin-right: 10px;
     background-color: #bfbfbf;
-    padding: 5px 10px;
-    border-radius: 2px;
+    padding: 3px 5px;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
@@ -52,8 +59,8 @@ ul {
     text-decoration: none;
     margin-right: 10px;
     background-color: #b31b1b;
-    padding: 5px 10px;
-    border-radius: 2px;
+    padding: 3px 5px;
+    border-radius: 4px;
     transition: background-color 0.3s;
 }
 
