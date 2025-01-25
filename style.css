@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=TeX+Gyre+Termes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=STIX&display=swap');
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
