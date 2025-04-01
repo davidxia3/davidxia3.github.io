@@ -36,8 +36,8 @@
                 <li>
                     <h4>University of Illinois Urbana-Champaign</h4>
                     <p>Bachelor of Science in Computer Science</p> 
-                    <p>Bachelor of Science in Liberal Arts & Sciences Major in Mathematics, Math Doctoral Preparation Concentration</p>
-                    <p>Undergraduate Minor in Statistics</p>
+                    <p>Bachelor of Science in Liberal Arts & Sciences Major in Mathematics</p>
+                    <p>Bachelor of Science in Liberal Arts & Sciences Major in Statistics</p>
                     <p>GPA: 3.98</p>
                     <p>Expected 2027</p>
                 </li>
@@ -48,10 +48,10 @@
             <h2>Experience</h2>
             <ul>
                 <li>
-                    <h4>Illinois Combinatorics Lab for Undergraduates (ICLUE), Researcher</h4>
+                    <h4>Illinois Combinatorics Lab for Undergraduates (ICLUE), Undergraduate Researcher</h4>
                     <ul>
                         <li>
-                            Mentored by Dr. Alexander Yong and doctoral student Duy Phan, studying algebraic combinatorics.
+                            Mentored by <a href="https://ayong.web.illinois.edu/">Dr. Alexander Yong</a> and Ph.D. student <a href="https://sites.google.com/view/duyphan/home">Duy Phan</a>, studying algebraic combinatorics.
                         </li>
                         <li>
                             Currently researching the application of the Robinson-Schensted-Knuth correspondence for bounding the probability of specific interactions in the Schensted insertion of permutations.
@@ -59,17 +59,17 @@
                     </ul>
                 </li>
                 <li>
-                    <h4>National University of Singapore SEEDER Group, Research Intern</h4>
+                    <h4>National University of Singapore <a href="https://blog.nus.edu.sg/seeder/">SEEDER Group</a>, Research Intern</h4>
                     <ul>
-                        <li>Worked under guidance of Dr. Kelvin Xuanyao's SEEDER Group to developed GARDEN, a machine learning pipeline to detect, classify, and analyze plant diseases, improving previous accuracies by 40%.</li>
+                        <li>Worked under guidance of Dr. Kelvin Xuanyao's <a href="https://blog.nus.edu.sg/seeder/">SEEDER Group</a> to developed GARDEN, a machine learning pipeline to detect, classify, and analyze plant diseases, improving previous accuracies by 40%.</li>
                         <li>Implemented generative, classification, and segmentation models built utilizing PyTorch and TensorFlow framework, using self-collected data from local aquaculture farms, and presented findings in manuscript.</li>
                     </ul>
                 </li>
                 <li>
                     <h4>University of California San Diego, Research Intern</h4>
                     <ul>
-                        <li>Worked with Dr. Xinyu Zhang and his PhD students on various projects over 4 years.</li>
-                        <li>Developed EveGuard, a software framework that defends against smartphone side-channel eavesdropping using an adversarial perturbation generator model while maintaining audio quality.</li>
+                        <li>Worked with <a href="https://xyzhang.ucsd.edu/index.html">Dr. Xinyu Zhang</a> and his PhD students on various projects over 4 years.</li>
+                        <li>Collaborated with <a href="https://samsonsjarkal.github.io/KeSun/index.html#">Dr. Ke Sun</a> to develop EveGuard, a software framework that defends against smartphone side-channel eavesdropping using an adversarial perturbation generator model while maintaining audio quality.</li>
                         <li>Trained segmentation and classification models for CogTeach, a facial expression recognition application tool for virtual learning, and conducted pilot study by delivering courses of lectures on neural networks.</li>
                     </ul>
                 </li>
@@ -86,16 +86,19 @@
                         <li>Built web scrapers with Selenium to scrape online data and analyzed the predictability of sports matches by comparing prediction accuracies of multiple sources including polls and the betting market.</li>
                         <li>Evaluated efficiency of model based probabilistic predictions.</li>
                         <li>Presented findings at Rose-Hulman Undergraduate Math Conference 2024, UIUC Undergraduate Research Symposium 2024, Joint Mathematics Meeting 2025.</li>
+                        <li>Repository available at <a href="https://github.com/davidxia3/PredictabilityCompetitiveness">GitHub</a>.</li>
+                        <li>Jointwork with Yihan Gao and Samuel Lam available at <a href="https://github.com/ajhildebrand/WinLossSequencesSpring24">GitHub</a>.</li>
                     </ul>
                 </li>
                 <li>
                     <h4>GARDEN</h4>
                     <ul>
-                        <li>Machine learning pipeline project at NUS SEEDER Group.</li>
+                        <li>Machine learning pipeline project at <a href="https://blog.nus.edu.sg/seeder/">NUS SEEDER Group</a>.</li>
                         <li>Developed machine learning pipeline to detect, classify, and analyze diseases found in plant leaves.</li>
                         <li>Trained U-Net segmentation models and classification models based on convolutional neural networks to isolate and classify images using the TensorFlow framework, achieving 90\% segmented classification rate.</li>
                         <li>Generated synthetic images using custom trained cGAN model to increase data variety and volume.</li>
                         <li>Stacked deep learning models with traditional techniques like support vector machines, gradient boosting, logistic regression, and decision trees to achieve an increased detection accuracy of over 95%.</li>
+                        <li>Manuscript available upon request.</li>
                     </ul>
                 </li>
                 <li>
@@ -104,7 +107,7 @@
                         <li>Developed EveGuard, a software-based defense framework to protect voice privacy from vibrometry-based side channels using adversarial audio by using a perturbation generator model (PGM) to effectively suppress sensor-based eavesdropping while preserving high audio quality.</li>
                         <li>Implemented Eve-GAN, a novel domain translation task for inferring eavesdropped signals, enabling end-to-end training of PGM, utilizing few-shot learning techniques to reduce data collection overhead.</li>
                         <li>Achieved a protection rate of over 97% against audio classifiers, hindering eavesdropped reconstruction.</li>
-                        <li>Co-authored paper due to appear in the IEEE Symposium on Security and Privacy 2025.</li>
+                        <li>Co-authored <a href="#paper1">paper</a> due to appear in the IEEE Symposium on Security and Privacy 2025.</li>
                     </ul>
                 </li>
             </ul>
@@ -141,10 +144,13 @@
         <section id="papers">
             <h2>Papers</h2>
             <ul>
-                <li><p><strong>Title:</strong> EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations<br>
+                <li id="paper1"><p><strong>Title:</strong> EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations<br>
                     <strong>Authors:</strong> Jung-Woo Chang, Ke Sun, <b>David Xia</b>, Xinyu Zhang, Farinaz Koushanfar<br>
                     To appear in IEEE Symposium on Security and Privacy 2025
                 </p>    
+                <div class="arxiv-links">
+                    <a href="https://arxiv.org/abs/2411.10034" target="_blank">arXiv</a>
+                </div>
                 </li>
             </ul>
         </section>
