@@ -116,3 +116,20 @@ figure figcaption {
     width: 150px;
     height: auto;
 }
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.text-section {
+    max-width: 60%;
+}
+
+.portrait img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
