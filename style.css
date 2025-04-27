@@ -133,3 +133,15 @@ figure figcaption {
     height: auto;
     border-radius: 10px;
 }
+
+.hof {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hof img {
+    width: 500px;
+    height: auto;
+}
