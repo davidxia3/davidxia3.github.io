@@ -134,14 +134,14 @@ figure figcaption {
     border-radius: 10px;
 }
 
-.hof {
+.hof-row {
     display: flex;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
 
-.hof img {
+.hof-row img {
     width: 500px;
     height: auto;
 }
