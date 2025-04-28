@@ -137,12 +137,12 @@ figure figcaption {
 .hof-row {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    /* gap: 10px; */
+    /* flex-wrap: wrap; */
 }
 
 .hof-entry {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
 }
