@@ -141,12 +141,6 @@ figure figcaption {
     /* flex-wrap: wrap; */
 }
 
-.hof-entry {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-}
-
 .hof-row img {
     width: 300px;
     height: auto;
