@@ -257,3 +257,9 @@ figure figcaption {
   margin: 0 6px;
   cursor: pointer;
 }
+
+/* ===== Disabled Controls ===== */
+.controls button.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
