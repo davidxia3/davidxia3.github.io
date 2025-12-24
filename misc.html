@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miscellaneous</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="binder.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miscellaneous</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="binder.js" defer></script>
 </head>
 <body>
-    <h3>Digital Version of Pokémon Binder</h3>
-    <div class="binder-wrapper">
-        <div class="binder">
-            <div class="book" id="book">
-                <div class="spread active">
-                <div class="page left empty"></div>
-                <div class="page right">
-                    <div class="card-grid">
-                        <img src="misc/binder/lugia_neo_genesis_first.png"/>
-                        <img src="misc/binder/lugia_aquapolis.png"/>
-                        <img src="misc/binder/lugia_bw8_134.png"/>
-                    </div>
-                </div>
-                </div>
 
-                <div class="spread">
-                    <div class="page left">
-                        <div class="card-grid">
-                            <img src="misc/binder/pikachu_birthday.png"/>
-                        </div>
-                    </div>
-                    <div class="page right">
-                        <div class="card-grid"></div>
-                    </div>
-                </div>
+  <h3>Digital Version of Pokémon Binder</h3>
 
-                <div class="spread">
-                    <div class="page left">
-                        <div class="card-grid"></div>
-                    </div>
-                    <div class="page right empty"></div>
-                </div>
+  <div class="binder-wrapper">
 
+    <div class="binder">
+      <div class="book" id="book">
+
+        <!-- First spread (right page only) -->
+        <div class="spread active">
+          <div class="page left empty"></div>
+          <div class="page right">
+            <div class="card-grid">
+              <img src="misc/binder/lugia_neo_genesis_first.png">
+              <img src="misc/binder/lugia_aquapolis.png">
+              <img src="misc/binder/lugia_bw8_134.png">
             </div>
+          </div>
         </div>
 
-        <div class="controls">
-            <button onclick="prev()">◀ Prev</button>
-            <button onclick="next()">Next ▶</button>
+        <!-- Middle spread -->
+        <div class="spread">
+          <div class="page left">
+            <div class="card-grid">
+              <img src="misc/binder/pikachu_birthday.png">
+            </div>
+          </div>
+          <div class="page right">
+            <div class="card-grid"></div>
+          </div>
         </div>
+
+        <!-- Last spread (left page only) -->
+        <div class="spread">
+          <div class="page left">
+            <div class="card-grid"></div>
+          </div>
+          <div class="page right empty"></div>
+        </div>
+
+      </div>
     </div>
 
+    <div class="controls">
+      <button onclick="prev()">◀ Prev</button>
+      <button onclick="next()">Next ▶</button>
+    </div>
 
+  </div>
 
 </body>
 </html>

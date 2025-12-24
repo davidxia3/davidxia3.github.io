@@ -12,7 +12,8 @@
 body {
     font-family: 'Merriweather', serif;
     line-height: 1.6;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
     background-color: #f8f8ff;
     color: #2d2d2d;
 }
@@ -151,51 +152,26 @@ figure figcaption {
 
 
 
+/* ===== Centering ===== */
+.binder-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Binder ===== */
+.binder {
+  margin-top: 20px;
+}
+
 .book {
   position: relative;
-  width: 1200px;   /* 2 pages */
+  width: 1200px;     /* two pages */
   height: 800px;
   perspective: 2500px;
 }
 
-.spread {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  transition: transform 1s ease;
-  z-index: 0;
-}
-
-.spread.active {
-  transform: rotateY(0deg);
-  z-index: 10;
-}
-
-.page {
-  width: 50%;
-  height: 100%;
-  background: #2b2b2b;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.page.left {
-  border-radius: 10px 0 0 10px;
-}
-
-.page.right {
-  border-radius: 0 10px 10px 0;
-}
-
-.page.empty {
-  background: transparent;
-  box-shadow: none;
-}
-
-
+/* ===== Spine ===== */
 .book::before {
   content: "";
   position: absolute;
@@ -205,14 +181,49 @@ figure figcaption {
   height: 100%;
   background: linear-gradient(to right, #111, #444, #111);
   transform: translateX(-50%);
+  z-index: 20;
 }
 
-.binder-wrapper {
+/* ===== Spreads ===== */
+.spread {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 0.9s ease;
+  z-index: 0;
 }
 
+.spread.active {
+  transform: rotateY(0deg);
+  z-index: 10;
+}
+
+/* ===== Pages ===== */
+.page {
+  width: 50%;
+  height: 100%;
+  background: #2b2b2b;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page.left {
+  border-radius: 12px 0 0 12px;
+}
+
+.page.right {
+  border-radius: 0 12px 12px 0;
+}
+
+.page.empty {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ===== Card Grid ===== */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -225,4 +236,24 @@ figure figcaption {
   height: auto;
   border-radius: 6px;
   background: black;
+  box-shadow:
+    inset 0 0 8px rgba(255,255,255,0.15),
+    0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+}
+
+.card-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Controls ===== */
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  font-size: 16px;
+  padding: 6px 12px;
+  margin: 0 6px;
+  cursor: pointer;
 }

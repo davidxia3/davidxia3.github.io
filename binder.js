@@ -21,7 +21,7 @@ function prev() {
   }
 }
 
-
+/* Keyboard navigation */
 document.addEventListener("keydown", e => {
   if (e.key === "ArrowRight") next();
   if (e.key === "ArrowLeft") prev();
