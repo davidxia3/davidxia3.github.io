@@ -1,22 +1,28 @@
-const pages = document.querySelectorAll(".page");
-let currentPage = 0;
+const spreads = document.querySelectorAll(".spread");
+let current = 0;
 
-function updatePages() {
-  pages.forEach((page, index) => {
-    page.classList.toggle("active", index === currentPage);
+function update() {
+  spreads.forEach((spread, i) => {
+    spread.classList.toggle("active", i === current);
   });
 }
 
-function nextPage() {
-  if (currentPage < pages.length - 1) {
-    currentPage++;
-    updatePages();
+function next() {
+  if (current < spreads.length - 1) {
+    current++;
+    update();
   }
 }
 
-function prevPage() {
-  if (currentPage > 0) {
-    currentPage--;
-    updatePages();
+function prev() {
+  if (current > 0) {
+    current--;
+    update();
   }
 }
+
+
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") next();
+  if (e.key === "ArrowLeft") prev();
+});

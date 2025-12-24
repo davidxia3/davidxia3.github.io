@@ -139,33 +139,45 @@
 
     <h3>Digital Version of Pokémon Binder</h3>
     <div class="binder">
-    <div class="book" id="book">
+        <div class="book" id="book">
+            <div class="spread active">
+            <div class="page left empty"></div>
+            <div class="page right">
+                <div class="card-grid">
+                    <img src="misc/binder/lugia_neo_genesis_first.png"/>
+                    <img src="misc/binder/lugia_aquapolis.png"/>
+                    <img src="misc/binder/lugia_bw8_134.png"/>
+                </div>
+            </div>
+            </div>
 
-        <div class="page active">
-        <div class="card-grid">
-            <img src="misc/binder/lugia_neo_genesis_first.png" />
-            <img src="misc/binder/lugia_aquapolis.png" />
-            <img src="misc/binder/lugia_bw8_134.png" />
-        </div>
-        </div>
+            <div class="spread">
+                <div class="page left">
+                    <div class="card-grid">
+                        <img src="misc/binder/pikachu_birthday.png"/>
+                    </div>
+                </div>
+                <div class="page right">
+                    <div class="card-grid"></div>
+                </div>
+            </div>
 
-        <div class="page">
-        <div class="card-grid">
-            <img src="misc/binder/pikachu_birthday.png" />
-        </div>
-        </div>
+            <div class="spread">
+                <div class="page left">
+                    <div class="card-grid"></div>
+                </div>
+                <div class="page right empty"></div>
+            </div>
 
-    
-
-    </div>
+        </div>
     </div>
 
     <div class="controls">
-    <button onclick="prevPage()">◀ Prev</button>
-    <button onclick="nextPage()">Next ▶</button>
+        <button onclick="prev()">◀ Prev</button>
+        <button onclick="next()">Next ▶</button>
     </div>
 
-    <script src="binder.js"></script>
+
     <hr>
 
     <h3>Here are some pictures of myself that I like. </h3>
