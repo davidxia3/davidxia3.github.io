@@ -28,12 +28,12 @@
 
     <main>
 
-        <section id="about">
+        <!-- <section id="about">
             <h2>About Me</h2>
             <p>A motivated undergraduate sophomore at UIUC studying computer science, interested in natural language processing (NLP) research.</p>
         </section>
 
-        <hr>
+        <hr> -->
 
         <section id="education">
             <h2>Education</h2>
@@ -51,31 +51,93 @@
 
         <hr>
 
+
+        <section id="papers">
+            <h2>Papers</h2>
+            <ul>
+                <li>
+                    <div id="paper3" class="paper-title">[2026] Revitalizing Local Democracy: A Human-Centered Audit of LLMs in City Council Journalism</div>
+                    <div class="authors"><b>David Xia</b>, Chris Maury</div>
+                    <div class="status"><i>Submitted to CHI 2026 HEAL Workshop</i></div>
+                    <div class="arxiv-links">
+                        <a href="https://arxiv.org/abs/2504.05510" target="_blank">arXiv</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="paper2" class="paper-title">[2025] RSK linear operators and the Vershik-Kerov-Logan-Shepp curve</div>
+                    <div class="authors">Duy Phan, <b>David Xia</b></div>
+                    <div class="status"><i>Submitted to Electronic Journal of Combinatorics</i></div>
+                    <div class="arxiv-links">
+                        <a href="https://arxiv.org/abs/2504.05510" target="_blank">arXiv</a>
+                    </div>
+                </li>
+                <li>
+                    <div id="paper1" class="paper-title">[2024] EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
+                    <div class="authors">Jung-Woo Chang, Ke Sun, <b>David Xia</b>, Xinyu Zhang, Farinaz Koushanfar</div>
+                    <div class="status"><i><a href="https://sp2025.ieee-security.org/" target="_blank">IEEE Symposium on Security and Privacy, 2025 </a></i></div>
+                    <div class="arxiv-links">
+                        <a href="https://arxiv.org/abs/2411.10034" target="_blank">arXiv</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
         <section id="experience">
-            <h2>Experience</h2>
+            <h2>Research Experience</h2>
             <ul>
                 <li>
                     <h4>Carnegie Mellon University Human-Computer Interaction Institute (HCII), Research Intern</h4>
                     <ul>
                         <li>
-                            Mentored by Prof. Jeff Bigham and Prof. Chris Maury to promote local civic engagement using LLMs for city council meeting reporting.
+                            Designed and evaluated an automated journalism pipeline using SOTA LLMs to replicate end-to-end editorial workflows, from transcript segmentation to headline generation and topic prioritization.
                         </li>
                         <li>
-                            Evaluating and developed an end-to-end LLM pipeline for identifying newsworthy topics and generating engaging headlines.
+                            Orchestrated large-scale crowd-sourced study to establish human-evaluated ground truth validation.
                         </li>
                         <li>
-                            Presented <a href="presentations/cmu_hcii_poster.pdf" target="_blank">research poster</a> at the CMU HCII REU Symposium and currently writing a paper.
+                            Demonstrated that LLM-based headline quality and topic prioritization can meet and exceed professional-standards.
+                        </li>
+                        <li>
+                            Presented research poster at the CMU HCII REU Symposium.
+                        </li>
+                        <li>
+                            Paper in submission to CHI 2026 Human-centered Evaluation and Auditing of Language Models (HEAL) workshop.
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h4>Illinois Combinatorics Lab for Undergraduates (ICLUE), Undergraduate Researcher</h4>
+                    <h4>Illinois Mathematics Lab (formerly Illinois Geometry Lab), Student Scholar</h4>
                     <ul>
                         <li>
-                            Mentored by Prof. Alexander Yong and Ph.D. student Duy Phan, studying algebraic combinatorics.
+                            Researched the data science perspective of sports matches at the Illinois Mathematics Lab.
                         </li>
                         <li>
-                            Co-authored a <a href="https://arxiv.org/abs/2504.05510" target="_blank">paper</a> on and currently researching the Robinson-Schensted-Knuth correspondence.
+                            Built web scrapers with Selenium to scrape online data and analyzed the predictability of sports matches by comparing prediction accuracies of multiple sources including polls and the betting market.
+                        </li>
+                        <li>
+                            Evaluated efficiency of probabilistic predictions based on the betting market, Elo, and other mathematical models.
+                        </li>
+                        <li>
+                            Presented findings at Rose-Hulman Undergraduate Math Conference 2024, UIUC Undergraduate Research Symposium 2024, and Joint Mathematics Meeting 2025.
+                        </li>
+                        <li>
+                            Currently working on paper.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Illinois Combinatorics Lab for Undergraduates (ICLUE), Research Mentee</h4>
+                    <ul>
+                        <li>
+                            Studying algebraic combinatorics, focusing on the Robinson-Schnested-Knuth correspondence.
+                        </li>
+                        <li>
+                            Used the Vershik-Kerov-Logan-Shepp curve to apply probability bounds on the RSK linear operator.
+                        </li>
+                        <li>
+                            Paper in submission to the Electronic Journal of Combinatorics.
                         </li>
                     </ul>
                 </li>
@@ -83,10 +145,16 @@
                     <h4>National University of Singapore SEEDER Group, Research Intern</h4>
                     <ul>
                         <li>
-                            Mentored by Prof. Kelvin Xuanyao's SEEDER Group to developed GARDEN, a machine learning pipeline to detect, classify, and analyze plant diseases, improving previous accuracies by 40%.
+                            Developed machine learning pipeline to detect, classify, and analyze diseases found in plant leaves.
                         </li>
                         <li>
-                            Implemented generative, classification, and segmentation models built utilizing PyTorch and TensorFlow framework, using self-collected data from local aquaculture farms, and presented findings in manuscript.
+                            Trained U-Net segmentation models and classification models based on convolutional neural networks to isolate and classify images using the TensorFlow framework, achieving 90\% segmented classification rate.
+                        </li>
+                        <li>
+                            Generated synthetic images using custom trained cGAN model to increase data variety and volume.
+                        </li>
+                        <li>
+                            Stacked deep learning classification models with traditional machine learning models to achieve an increased detection accuracy of over 95\%.
                         </li>
                     </ul>
                 </li>
@@ -94,98 +162,15 @@
                     <h4>University of California San Diego, Research Intern</h4>
                     <ul>
                         <li>
-                            Mentored by Prof. Xinyu Zhang and on various IoT and mobile device projects over four years.
-                        </li>
-                        <li>
-                            Collaborated with Prof. Ke Sun to develop EveGuard, a software framework that defends against smartphone side-channel eavesdropping using an adversarial perturbation generator model. <a href="https://arxiv.org/abs/2411.10034" target="_blank">EveGuard paper</a> accepted to IEEE Symposium on Security and Privacy 2025.
-                        </li>
-                        <li>
-                            Trained segmentation and classification models for CogTeach, a facial expression recognition application tool for virtual learning, and conducted pilot study by delivering courses of lectures on neural networks.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-
-        <hr>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h4>LLMs for Extracting Newsworthiness and Engaging Headlines</h4>
-                    <ul>
-                        <li>
-                            Goal of promoting local civic engagement by using LLMs for affordable city council meeting reporting.
-                        </li>
-                        <li>
-                            Evaluating and developed an end-to-end LLM pipeline for identifying newsworthy topics and generating engaging headlines.
-                        </li>
-                        <li>
-                            LLM generated headlines consistently drew stronger interest and opinions from crowd sourced human-evaluators on Prolific than expert written headlines.
-                        <li>
-                            The LLMs also prioritized more interesting and newsworthy topics compared to expert selected topics, showing that LLMs can perform the modular task of covering city council meetings better than the expert.
-                        </li>
-                        <li>
-                            Presented <a href="presentations/cmu_hcii_poster.pdf" target="_blank">research poster</a> at the CMU HCII REU Symposium and currently writing a paper.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Predictability and Competitiveness of Sports Leagues</h4>
-                    <ul>
-                        <li>
-                            Researched the data science perspective of sports competitions with Prof. AJ Hildebrand at the Illinois Mathematics Lab..
-                        </li>
-                        <li>
-                            Built web scrapers with Selenium to scrape online data and analyzed the predictability of sports matches by comparing prediction accuracies of multiple sources including polls and the betting market.
-                        </li>
-                        <li>
-                            Evaluated efficiency of probabilistic predictions based on money line, Elo, and other models.
-                        </li>
-                        <li>
-                            Presented findings at <a href="/presentations/rose_hulman_2024_presentation.pdf" target="_blank">Rose-Hulman Undergraduate Math Conference 2024</a>, <a href="presentations/spring_2024_poster.pdf" target="_blank">UIUC Undergraduate Research Symposium 2024</a>, and <a href="presentations/jmm_2025_poster.pdf" target="_blank">Joint Mathematics Meeting 2025</a>.
-                        </li>
-                        <li>
-                            Repository available at <a href="https://github.com/davidxia3/PredictabilityCompetitiveness" target="_blank">GitHub</a>.
-                        </li>
-                        <li>
-                            Jointwork with Yihan Gao and Samuel Lam available at <a href="https://github.com/ajhildebrand/WinLossSequencesSpring24" target="_blank">GitHub</a>.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>GARDEN: ML pipeline for anomaly detection</h4>
-                    <ul>
-                        <li>
-                            Developed machine learning pipeline to detect, classify, and analyze diseases found in plant leaves.
-                        </li>
-                        <li>
-                            Trained U-Net segmentation models and classification models based on convolutional neural networks to isolate and classify images using the TensorFlow framework, achieving 90% segmented classification rate.
-                        </li>
-                        <li>
-                            Generated synthetic images using custom trained cGAN model to increase data variety and volume.
-                        </li>
-                        <li>
-                            Stacked deep learning models with traditional techniques like support vector machines, gradient boosting, logistic regression, and decision trees to achieve an increased detection accuracy of over 95%.
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>EveGuard: Software framework for eavesdropping defense</h4>
-                    <ul>
-                        <li>
                             Developed EveGuard, a software-based defense framework to protect voice privacy from vibrometry-based side channels using adversarial audio by using a perturbation generator model (PGM) to effectively suppress sensor-based eavesdropping while preserving high audio quality.
+                        <li>
+                            Implemented Eve-GAN, a novel domain translation task for inferring eavesdropped signals, enabling end-to-end training of PGM, utilizing few-shot learning techniques to reduce data collection overhead.
                         </li>
                         <li>
-                            Implemented Eve-GAN, a novel domain translation task for inferring eavesdropped signals, enabling end-to-end training of PGM, utilizing few-shot learning techniques to reduce data collection overhead.                        
+                            Achieved a protection rate of over 97\% against audio classifiers, hindering eavesdropped reconstruction.
                         </li>
                         <li>
-                            Achieved a protection rate of over 97% against audio classifiers, hindering eavesdropped reconstruction.
-                        </li>
-                        <li>
-                            Co-authored a <a href="https://arxiv.org/abs/2411.10034" target="_blank">paper</a> accepted to the IEEE Symposium on Security and Privacy 2025.
+                            Paper published in the IEEE Symposium on Security and Privacy 2025.
                         </li>
                     </ul>
                 </li>
@@ -194,6 +179,8 @@
 
 
         <hr>
+
+    
 
         <section id="presentations">
             <h2>Presentations</h2>
@@ -208,7 +195,7 @@
                     </p>
                 </li>
                 <li>
-                    <h4>Algebra, Geometry and Combinatorics Day, 2025 (Presented by Duy Phan)</h4>
+                    <h4>Algebra, Geometry and Combinatorics Day, 2025 (joint work presented by Duy Phan)</h4>
                     <p>
                         <strong>Title: </strong>RSK linear operators and the Vershik-Kerov-Logan-Shepp curve<br>
                         <strong>Authors: </strong>Duy Phan, David Xia<br>
@@ -250,35 +237,12 @@
 
         <hr>
 
-        <section id="papers">
-            <h2>Papers</h2>
-            <ul>
-                <li>
-                    <div id="paper2" class="paper-title">[2025] RSK linear operators and the Vershik-Kerov-Logan-Shepp curve</div>
-                    <div class="authors">Duy Phan, <b>David Xia</b></div>
-                    <div class="status"><i>Preprint</i></div>
-                    <div class="arxiv-links">
-                        <a href="https://arxiv.org/abs/2504.05510" target="_blank">arXiv</a>
-                    </div>
-                </li>
-                <li>
-                    <div id="paper1" class="paper-title">[2025] EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
-                    <div class="authors">Jung-Woo Chang, Ke Sun, <b>David Xia</b>, Xinyu Zhang, Farinaz Koushanfar</div>
-                    <div class="status"><i><a href="https://sp2025.ieee-security.org/" target="_blank">IEEE Symposium on Security and Privacy, 2025 </a></i></div>
-                    <div class="arxiv-links">
-                        <a href="https://arxiv.org/abs/2411.10034" target="_blank">arXiv</a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <hr>
 
         <section id="awards">
             <h2>Grants and Awards</h2>
             <ul>
-                <li>ICLUE RTG: NSF 1937241</li>
                 <li>CMU HCII REU: NSF 2349558</li>
+                <li>ICLUE RTG: NSF 1937241</li>
             </ul>
         </section>
 
