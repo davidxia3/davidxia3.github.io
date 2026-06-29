@@ -1,0 +1,483 @@
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule ]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 }
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    
+}
+
+\newcommand{\resumeSubheading}[4]{
+\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    
+}
+
+\newcommand{\resumeProject}[4]{
+\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+\newcommand{\cvsection}[1]{%
+
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{David Xia}}
+\end{center}
+
+
+\begin{center}
+    \href{mailto:davidx3@illinois.edu}{davidx3@illinois.edu} | \href{https://davidxia3.github.io/index.html}{Personal Website} | 
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/dx3/}{LinkedIn - dx3} | 
+    \socialicon{\faGithub} \href{https://github.com/davidxia3}{GitHub - davidxia3}
+    
+\end{center}
+
+\section{\textbf{Research Interests}}
+Theoretical ML, reinforcement learning, online learning, MDP function approximation, sample complexity
+
+
+
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{University of Illinois Urbana-Champaign}{Champaign, Illinois}
+{\parbox[t]{6in}{Bachelor of Science in Computer Science \\ Bachelor of Science in Liberal Arts \& Sciences Major in Mathematics, Data Optimization Concentration\\
+Bachelor of Science in Liberal Arts \& Sciences Major in Statistics}}
+{\hspace{-3ex}Aug 2023 - May 2027}
+
+
+\resumeItemListStart
+\item GPA: 3.99/4.00
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+
+\section{\textbf{Papers} \hfill \textcolor{darkblue}{\scriptsize SUB=Submitted, ACC=Accepted}}
+
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}}]
+    \item[\textbf{2025}] \textbf{[ACC]} \textbf{RSK linear operators and the Vershik-Kerov-Logan-Shepp curve} [\href{https://arxiv.org/abs/2504.05510}{arXiv}]\\
+        Duy Phan, \textbf{David Xia}\\
+        \textit{to appear in Electronic Journal of Combinatorics}
+    \item[\textbf{2024}] \textbf{[ACC]} \textbf{EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations} [\href{https://arxiv.org/abs/2411.10034}{arXiv}]\\ 
+    Jung-Woo Chang, Ke Sun, \textbf{David Xia}, Xinyu Zhang, Farinaz Koushanfar \\
+    \textit{IEEE Symposium on Security and Privacy, 2025}
+\end{enumerate}
+
+
+
+\section{\textbf{Workshop Papers \& Manuscripts} \hfill \textcolor{darkblue}{\scriptsize PRE= In Preparation, SUB=Submitted, ACC=Accepted}}
+
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}}]
+    \item[\textbf{2026}] \textbf{[PRE]} \textbf{Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear $Q^\pi$ Realizability} [\href{https://davidxia3.github.io/docs/stochastic_fpi.pdf}{PDF}] \\
+    % [\href{https://arxiv.org/abs/2504.05510}{arXiv}]\\ 
+            \textbf{David Xia},
+            Ruizhong Qiu, Hanghang Tong\\
+            \textit{Manuscript in Preparation}
+
+
+    \item[\textbf{2026}] \textbf{[SUB]} \textbf{Predictability in Major League Sports: Betting Odds versus Mathematical Models} [\href{https://davidxia3.github.io/docs/predictability_paper.pdf}{PDF}] \\
+    % [\href{https://arxiv.org/abs/2504.05510}{arXiv}]\\ 
+            \textbf{David Xia},
+            AJ Hildebrand\\
+            \textit{Submitted to the Mathematics and Sports (MAS) Journal}
+
+
+
+    \item[\textbf{2026}] \textbf{[ACC]} \textbf{Revitalizing Local Democracy: A Human-Centered Audit of LLMs in City Council Journalism} [\href{https://davidxia3.github.io/docs/heal_paper.pdf}{PDF}]\\
+    % [\href{https://arxiv.org/abs/2504.05510}{arXiv}]\\ 
+            \textbf{David Xia},
+            Chris Maury\\
+            \textit{Human-centered Evaluation and Auditing of Language Models (HEAL) Workshop at CHI 2026}
+    
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\section{\textbf{Research Experience}}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {{\href{https://zhaoranwang.github.io/}{Northwestern University}}\textnormal{, Research Intern}}{}
+      {}{May 2026 - present}
+      \resumeItemListStart
+        \vspace{-2em}
+        \item Advised by Professor \href{https://zhaoranwang.github.io/}{Zhaoran Wang}.
+
+        \item Developed a closed-loop LLM meta-orchestrator agent for aircraft wing inverse design, where the agent diagnoses its own surrogate failures across iterative versions and emits corrective source code for the next optimization layer.
+
+        \item Identified and systematically addressed seven structural failure modes of surrogate-based optimization—including surrogate exploitation, Gaussian trust collapse, family-specific exploitation, and single-objective specification gaming—building a unified taxonomy and corresponding defenses.
+
+        \item Applied reinforcement-learning-style reasoning to the outer loop: the LLM agent classifies failure modes and upgrades its decision layer, achieving relative robustness gains validated against public RANS datasets (AirfRANS, SuperWing, ONERA CRM).
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {{\href{https://www.idea-isail.com/index.html}{iDEA-iSAIL Lab}}\textnormal{, Research Intern}}{}
+      {}{Feb 2026 - present}
+      \resumeItemListStart
+        \vspace{-2em}
+        \item Advised by Professor \href{http://tonghanghang.org/}{Hanghang Tong}.
+        
+        
+        \item Conducted research in theoretical reinforcement learning, studying sample and computation efficient algorithms for online learning in finite-horizon Markov Decision Processes under function approximation and stochastic dynamics.
+
+
+        \item Used concentrability to develop the first sample and computation efficient algorithm for online reinforcement learning in stochastic-transition MDPs under the linear $Q^\pi$ realizability assumption, resolving an open problem left by prior work restricted to deterministic dynamics.
+
+        \item Established a PAC sample complexity guarantee of $\tilde{O}(d^2H^7C^*/\varepsilon^3)$ by combining techniques from both offline and online reinforcement learning theory, dynamic programming, concentration analysis, and linear function approximation.
+
+        
+        \item  \href{https://davidxia3.github.io/docs/stochastic_fpi.pdf}{Manuscript in preparation.}
+      \resumeItemListEnd 
+
+
+    \resumeSubheading
+      {{\href{https://ayong.web.illinois.edu/ICLUE.html}{Illinois Combinatorics Lab for Undergraduate Experience (ICLUE)}}\textnormal{, Research Intern}}{}
+      {}{Aug 2024 - present}
+      \resumeItemListStart
+        \vspace{-2em}
+        \item Advised by Professor \href{https://ayong.web.illinois.edu/}{Alexander Yong}.
+        
+        
+        \item Proved a new asymptotic result that the probability that the Schensted insertion algorithm for a uniformly random permutation in $S_n$ exhibits a special "bumping" interaction converges to 1 as $n$ approaches infinity.
+
+        \item Derived the result using rigorous probability bounds on the RSK linear operator by leveraging the Vershik-Kerov-Logan-Shepp limit shape curve as the central analytic tool.
+
+        \item Developed proofs requiring techniques spanning real analysis (uniform convergence, limit arguments), probability theory (concentration inequalities, convergence in probability), and asymptotic analysis (bounding combinatorial quantities in the large-$n$ regime).
+
+        
+        \item Paper in submission to the \href{https://www.combinatorics.org/}{Electronic Journal of Combinatorics}.
+      \resumeItemListEnd 
+
+
+
+\resumeSubheading
+    {{\href{https://xyzhang.ucsd.edu/index.html}{University of California San Diego}}\textnormal{, Research Intern}}{}
+    {}{Jun 2023 - Dec 2024}
+    \resumeItemListStart
+    \vspace{-2em}
+        \item Advised by Professor \href{https://xyzhang.ucsd.edu/index.html}{Xinyu Zhang}.
+        
+
+    
+      \item Developed EveGuard, a software-based defense framework to protect voice privacy from vibrometry-based side channels using adversarial audio by using a perturbation generator model (PGM) to effectively suppress sensor-based eavesdropping while preserving high audio quality.
+
+      \item Implemented Eve-GAN, a novel domain translation task for inferring eavesdropped signals, enabling end-to-end training of PGM, utilizing few-shot learning techniques to reduce data collection overhead.
+
+      \item Achieved a protection rate of over 97\% against audio classifiers, hindering eavesdropped reconstruction.
+
+      \item Paper published in the \href{https://sp2025.ieee-security.org/}{IEEE Symposium on Security and Privacy 2025}.
+    \resumeItemListEnd
+
+
+
+
+\resumeSubheading
+      {{\href{https://iml.math.illinois.edu/}{Illinois Mathematics Lab (formerly Illinois Geometry Lab)}}\textnormal{, Research Intern}}{}
+      {}{Jan 2024 - present}
+      \resumeItemListStart
+        \vspace{-2em}
+        \item Advised by Professor AJ Hildebrand.
+        
+      
+        \item Researched the data science perspective of sports matches, analyzing the predictability of outcomes by comparing prediction accuracies across polls, the betting market, Elo ratings, and mathematical models like Bradley-Terry.
+        
+
+        \item Presented findings at Rose-Hulman Undergraduate Math Conference 2024, UIUC Undergraduate Research Symposium 2024, and Joint Mathematics Meeting 2025.
+
+        \item Paper in submission to the \href{https://janeway.uncpress.org/ms/}{Mathematics and Sports (MAS) Journal}.
+      \resumeItemListEnd 
+
+
+
+
+
+
+  
+
+\resumeSubheading
+    {{\href{https://hcii.cmu.edu/}{Carnegie Mellon University Human-Computer Interaction Institute}}\textnormal{, Research Intern}}{}
+    {}{May 2025 - Feb 2026}
+      \resumeItemListStart
+      \vspace{-2em}
+        \item Advised by Professor \href{https://www.cs.cmu.edu/~jbigham/}{Jeff Bigham}.
+        
+      
+        \item Designed and evaluated an automated journalism pipeline using SOTA LLMs to replicate end-to-end editorial workflows, from transcript segmentation to headline generation and topic prioritization.
+
+        \item Orchestrated large-scale crowd-sourced study and demonstrated that LLM-based headline quality and topic prioritization can meet and exceed professional standards.
+
+                    
+        \item Paper in CHI 2026 \href{https://heal-workshop.github.io/}{Human-centered Evaluation and Auditing of Language Models (HEAL) workshop}.
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+
+  % \resumeSubheading
+  %     {{\href{https://blog.nus.edu.sg/seeder/}{National University of Singapore SEEDER Group}}\textnormal{, Research Intern}}{}
+  %     {}{May 2024 - Aug 2024}
+  %     \resumeItemListStart
+  %     \vspace{-2em}
+  %       \item Advised by Professor \href{https://blog.nus.edu.sg/seeder/people/kelvinxyfong/}{Xuanyao Fong}.
+        
+
+        
+  %       \item Developed machine learning pipeline to detect, classify, and analyze diseases in plant leaves using U-Net segmentation and CNN classification models, achieving 90\% segmented classification rate.
+
+        
+        
+  %       \item Stacked deep learning models with traditional ML models and augmented training data with cGAN-generated synthetic images, achieving over 95\% detection accuracy.
+
+        
+  %     \resumeItemListEnd 
+
+  % \resumeSubHeadingListEnd
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \section{\textbf{Presentations}}
+
+
+% \begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+% \item[\textbf{2025}] \textbf{Carnegie Mellon University Human-Computer Interaction Institute REU Symposium} LLMs for Extracting Agenda Items from City Council Meetings and Generating Newsworthy Headlines
+% \item[\textbf{2025}] \textbf{Algebra, Geometry and Combinatorics Day} RSK linear operators and the Vershik-Kerov-Logan-Shepp curve (joint work presented by Duy Phan)
+% \item[\textbf{2025}] \textbf{Joint Mathematics Meeting Pi Mu Epsilon Poster Session} Predictability in Major Sports Leagues
+% \item[\textbf{2024}] \textbf{Illinois Mathematics Lab Research Symposium} Predictability in College Sports
+% \item[\textbf{2024}] \textbf{University of Illinois Undergraduate Research Symposium} Predictability in College Sports
+% \item[\textbf{2024}] \textbf{Rose-Hulman Undergraduate Math Conference} Predictability in College Sports
+
+% \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{\textbf{Relevant Coursework}}
+
+\begin{itemize}[leftmargin=0.15in, label={}, nosep]
+\item{
+    \textbf{CS:} Statistical Reinforcement Learning, Machine Learning, NLP, Deep Learning, Algorithms, Numerical Methods, Numerical Analysis \\
+    \textbf{Math:} Honors Real Analysis, Graph Theory, Combinatorics, Abstract Linear Algebra, Abstract Algebra I--II, Algebraic Combinatorics, Linear Programming \\
+    \textbf{Stats:} Stochastic Processes, Applied Bayesian Analysis, Survival Analysis
+  }
+\end{itemize}
+
+
+
+% \section{\textbf{Service}}
+
+
+% \begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+% \item[\textbf{SP26 UIUC}] Algorithms (CS 374) Course Assistant
+
+% \end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\section{\textbf{Grants and Awards}}
+
+\begin{enumerate}[leftmargin=*, labelsep=0.5em, align=left, widest={[\textbf{S.1}]}, itemindent=0em, label={\textbf{[\arabic*]}]}]
+\item[\textbf{2025}] CMU HCII REU: NSF 2349558
+\item[\textbf{2025}] ICLUE RTG: NSF 1937241
+
+
+\end{enumerate}
+
+
+
+
+
+\begin{center}
+
+    \href{mailto:davidx3@illinois.edu}{davidx3@illinois.edu} | \href{https://davidxia3.github.io/index.html}{Personal Website} | 
+    \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/dx3/}{LinkedIn - dx3} | 
+    \socialicon{\faGithub} \href{https://github.com/davidxia3}{GitHub - davidxia3}
+    
+\end{center}
+
+\end{document}
