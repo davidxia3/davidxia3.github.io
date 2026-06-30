@@ -3,62 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures</title>
+    <title>Gallery — David Xia</title>
+    <meta name="description" content="Photos from conferences, talks, and visits — David Xia.">
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+    <script src="site.js" defer></script>
 </head>
 <body>
-    <h1>Pictures</h1>
-    <figure>
-        <img src="images/heal.jpeg" alt="HEAL" width="500">
-        <figcaption>CHI HEAL 2026 | International Barcelona Convention Center | 15. April 2026</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/cmu.jpg" alt="CMU" width="500">
-        <figcaption>CMU HCII REU | Hamerschlag Hall | 18. June 2025</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/reiner2024.jpg" alt="reiner" width="500">
-        <figcaption>Combinatorics Colloquium | UIUC | 20. September 2024</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/nus.jpg" alt="NUS" width="500">
-        <figcaption>SERIUS | National University of Singapore | 18. June 2024</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/ntu.jpg" alt="NTU" width="500">
-        <figcaption>Visit | Nanyang Technological University | 6. June 2024</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/uminn.jpg" alt="UMN" width="500">
-        <figcaption>SPiNCOM | University of Minnesota | 17. May 2024</figcaption>
-    </figure>
-    <figure>
-        <img src="images/rhit.jpg" alt="RHIT" width="500">
-        <figcaption>Rose-Hulman Undergraduate Math Conference | Rose-Hulman Institute of Technology | 27. April 2024</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/davis.jpg" alt="UCD" width="500">
-        <figcaption>Special Visit | University of California Davis | 7. March 2024</figcaption>
-    </figure>
-    
-    <figure>
-        <img src="images/uiuc.jpg" alt="UIUC" width="500">
-        <figcaption>Undergraduate | University of Illinois Urbana-Champaign | 28. February 2024</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/hs_grad.jpg" alt="UIUC" width="500">
-        <figcaption>High School Graduation | Canyon Crest Academy | 2. June 2023</figcaption>
-    </figure>
-
-    <nav>
-        <a href="index.html">Home</a>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">David Xia</a>
+            <div class="nav-links">
+                <a href="papers.html">Publications</a>
+                <a href="cv.html">CV</a>
+                <a href="pictures.html" class="active nav-hide-sm">Gallery</a>
+                <a href="misc.html" class="nav-hide-sm">Misc</a>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
     </nav>
+
+    <main class="wrap">
+
+        <header class="page-head">
+            <h1>Gallery</h1>
+            <p>Moments from conferences, research programs, and visits.</p>
+        </header>
+
+        <section style="margin-top:2.5rem;">
+            <div class="gallery">
+                <figure>
+                    <img src="images/heal.jpeg" alt="CHI HEAL 2026, Barcelona">
+                    <figcaption><strong>CHI HEAL 2026</strong>International Barcelona Convention Center · 15 April 2026</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cmu.jpg" alt="CMU HCII REU">
+                    <figcaption><strong>CMU HCII REU</strong>Hamerschlag Hall · 18 June 2025</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/reiner2024.jpg" alt="Combinatorics Colloquium at UIUC">
+                    <figcaption><strong>Combinatorics Colloquium</strong>UIUC · 20 September 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/nus.jpg" alt="SERIUS at NUS">
+                    <figcaption><strong>SERIUS</strong>National University of Singapore · 18 June 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/ntu.jpg" alt="Visit to NTU">
+                    <figcaption><strong>Visit</strong>Nanyang Technological University · 6 June 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/uminn.jpg" alt="SPiNCOM at University of Minnesota">
+                    <figcaption><strong>SPiNCOM</strong>University of Minnesota · 17 May 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rhit.jpg" alt="Rose-Hulman Undergraduate Math Conference">
+                    <figcaption><strong>Rose-Hulman Undergraduate Math Conference</strong>Rose-Hulman Institute of Technology · 27 April 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/davis.jpg" alt="Visit to UC Davis">
+                    <figcaption><strong>Special Visit</strong>University of California Davis · 7 March 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/uiuc.jpg" alt="UIUC">
+                    <figcaption><strong>Undergraduate</strong>University of Illinois Urbana-Champaign · 28 February 2024</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hs_grad.jpg" alt="High school graduation">
+                    <figcaption><strong>High School Graduation</strong>Canyon Crest Academy · 2 June 2023</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <div class="footer-social">
+                <a href="mailto:davidx3@illinois.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/davidxia3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dx3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="footer-meta">© 2026 David Xia</span>
+        </div>
+    </footer>
+
 </body>
 </html>

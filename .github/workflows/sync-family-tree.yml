@@ -1,0 +1,24 @@
+name: Sync family tree SVG
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  workflow_dispatch:        # manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download latest SVG
+        run: |
+          curl -sL "https://raw.githubusercontent.com/davidxia3/family-tree/main/build/family_tree.svg" \
+            -o misc/family_tree.svg
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add misc/family_tree.svg
+          git diff --staged --quiet || (git commit -m "chore: sync family tree SVG" && git push)

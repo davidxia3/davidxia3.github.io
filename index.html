@@ -4,36 +4,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Xia</title>
+    <meta name="description" content="David Xia — undergraduate researcher in theoretical machine learning and reinforcement learning at the University of Illinois Urbana-Champaign.">
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+    <script src="site.js" defer></script>
 </head>
 <body>
-    <h1>David Xia's Website</h1>
-    <div class="container">
-        <div class="text-section">
-            <h2>David Xia, CS and Math at UIUC</h2>
-            <h3>davidx3@illinois.edu</h3>
-            <h3>|)/\\/||) ><|/\</h3>
-            
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">David Xia</a>
+            <div class="nav-links">
+                <a href="papers.html">Publications</a>
+                <a href="cv.html">CV</a>
+                <a href="pictures.html" class="nav-hide-sm">Gallery</a>
+                <a href="misc.html" class="nav-hide-sm">Misc</a>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+                </button>
+            </div>
         </div>
-
-        <div class="portrait">
-            <img src="images/david.jpg" alt="david">
-        </div>
-    </div>
-    <nav>
-        <a href="cv.html">Curriculum Vitae</a>
-        <a href="papers.html">Papers</a>
-        <a href="pictures.html">Pictures</a>
     </nav>
 
-    <div class="egg_spacer"></div>
-    <p> <i>I see now that the circumstances <br>
-        of one's birth are irrelevant. <br>
-        It is what you do with the gift of life <br>
-        that determines who you are.</i></p>
+    <main class="wrap">
 
-    <nav>
-        <a href="misc.html">Miscellaneous</a>
-    </nav>
+        <!-- ===== Hero ===== -->
+        <header class="hero">
+            <div class="hero-text">
+                <span class="hero-eyebrow">B.S. Computer Science · Mathematics · Statistics</span>
+                <h1>David Xia</h1>
+                <p class="hero-tagline">Theoretical machine learning &amp; reinforcement learning</p>
+                <p class="hero-bio">
+                    I'm a senior at the University of Illinois Urbana-Champaign studying
+                    computer science, mathematics, and statistics. I work on the theoretical
+                    foundations of machine learning, and I'm applying to CS PhD programs for fall 2027.
+                </p>
+                <div class="pill-row">
+                    <a class="pill pill-primary" href="docs/david_xia_cv.pdf" target="_blank"><i class="fas fa-file-lines"></i> Curriculum Vitae</a>
+                    <a class="pill" href="mailto:davidx3@illinois.edu"><i class="fas fa-envelope"></i> Email</a>
+                    <a class="pill" href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                    <a class="pill" href="https://github.com/davidxia3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a class="pill" href="https://www.linkedin.com/in/dx3/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="hero-portrait-wrap">
+                <img class="portrait" src="images/david.png" alt="David Xia">
+            </div>
+        </header>
+
+        <!-- ===== About ===== -->
+        <section id="about" class="reveal">
+            <div class="section-label">About</div>
+            <p class="lede">
+                My research centers on the theory of sequential decision-making: reinforcement
+                learning, online learning, and function approximation in Markov decision processes.
+                I'm drawn to questions of sample and computational complexity — when efficient
+                learning is provably possible, and the algorithms that achieve it. Alongside this
+                core focus, I've worked across combinatorics, adversarial machine learning, and
+                human-centered evaluation of large language models.
+            </p>
+            <div class="tag-row">
+                <span class="tag">Reinforcement Learning</span>
+                <span class="tag">Online Learning</span>
+                <span class="tag">MDP Function Approximation</span>
+                <span class="tag">Sample Complexity</span>
+                <span class="tag">Learning Theory</span>
+            </div>
+        </section>
+
+        <!-- ===== News ===== -->
+        <section id="news" class="reveal">
+            <div class="section-label">News</div>
+            <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">May 2026</span>
+                    <span class="news-body">Started a research internship at <strong class="name">Northwestern University</strong> with <a class="name" href="https://zhaoranwang.github.io/" target="_blank">Prof. Zhaoran Wang</a> on agentic reinforcement learning.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Apr 2026</span>
+                    <span class="news-body">Presented our LLM-journalism audit at the <a class="name" href="https://heal-workshop.github.io/" target="_blank">HEAL workshop</a> at <strong class="name">CHI 2026</strong> in Barcelona.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Jun 2026</span>
+                    <span class="news-body"><em>RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</em> was accepted — to appear in the <a class="name" href="https://www.combinatorics.org/" target="_blank">Electronic Journal of Combinatorics</a>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Feb 2026</span>
+                    <span class="news-body">Joined the <a class="name" href="https://www.idea-isail.com/index.html" target="_blank">iDEA-iSAIL Lab</a> at <span class="name">UIUC</span> with <a class="name" href="http://tonghanghang.org/" target="_blank">Prof. Hanghang Tong</a>, working on theoretical RL.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">May 2025</span>
+                    <span class="news-body"><em>EveGuard</em> appeared at the <strong class="name">IEEE Symposium on Security and Privacy 2025</strong>.</span>
+                </li>
+                <li class="news-item">
+                    <span class="news-date">Jan 2025</span>
+                    <span class="news-body">Presented sports-predictability research at the <strong class="name">Joint Mathematics Meetings</strong>.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Selected Publications ===== -->
+        <section id="publications" class="reveal">
+            <div class="section-label">Selected Publications</div>
+            <div class="pub-list">
+                <article class="pub">
+                    <span class="pub-year">2026</span>
+                    <div>
+                        <div class="pub-title">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</div>
+                        <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Ruizhong Qiu</span>, <span class="name">Hanghang Tong</span></div>
+                        <div class="pub-venue"><span class="badge">IN PREP</span> Manuscript in preparation</div>
+                        <div class="link-row">
+                            <a class="chip" href="docs/stochastic_fpi.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="pub">
+                    <span class="pub-year">2025</span>
+                    <div>
+                        <div class="pub-title">RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</div>
+                        <div class="pub-authors"><span class="name">Duy Phan</span>, <span class="me">David Xia</span></div>
+                        <div class="pub-venue"><span class="badge">TO APPEAR</span> Electronic Journal of Combinatorics</div>
+                        <div class="link-row">
+                            <a class="chip arxiv" href="https://arxiv.org/abs/2504.05510" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="pub">
+                    <span class="pub-year">2025</span>
+                    <div>
+                        <div class="pub-title">EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
+                        <div class="pub-authors"><span class="name">Jung-Woo Chang</span>, <span class="name">Ke Sun</span>, <span class="me">David Xia</span>, <span class="name">Xinyu Zhang</span>, <span class="name">Farinaz Koushanfar</span></div>
+                        <div class="pub-venue"><span class="badge">PUBLISHED</span> IEEE Symposium on Security and Privacy 2025</div>
+                        <div class="link-row">
+                            <a class="chip arxiv" href="https://arxiv.org/abs/2411.10034" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <a class="more-link" href="papers.html">View all publications <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section id="experience" class="reveal">
+            <div class="section-label">Research Experience</div>
+            <div class="exp-list">
+                <div class="exp">
+                    <div>
+                        <span class="exp-place name">Northwestern University</span>
+                        <div class="exp-role">Research Intern · advised by <a class="name" href="https://zhaoranwang.github.io/" target="_blank">Zhaoran Wang</a> — agentic reinforcement learning</div>
+                    </div>
+                    <span class="exp-date">May 2026 – present</span>
+                </div>
+                <div class="exp">
+                    <div>
+                        <span class="exp-place name">iDEA-iSAIL Lab, UIUC</span>
+                        <div class="exp-role">Research Intern · advised by <a class="name" href="http://tonghanghang.org/" target="_blank">Hanghang Tong</a> — theoretical RL</div>
+                    </div>
+                    <span class="exp-date">Feb 2026 – present</span>
+                </div>
+                <div class="exp">
+                    <div>
+                        <span class="exp-place name">ICLUE, UIUC</span>
+                        <div class="exp-role">Research Intern · advised by <a class="name" href="https://ayong.web.illinois.edu/" target="_blank">Alexander Yong</a> — algebraic combinatorics</div>
+                    </div>
+                    <span class="exp-date">Aug 2024 – present</span>
+                </div>
+                <div class="exp">
+                    <div>
+                        <span class="exp-place name">Carnegie Mellon University, HCII</span>
+                        <div class="exp-role">Research Intern · advised by <a class="name" href="https://www.cs.cmu.edu/~jbigham/" target="_blank">Jeff Bigham</a> — LLMs &amp; journalism</div>
+                    </div>
+                    <span class="exp-date">May 2025 – Feb 2026</span>
+                </div>
+                <div class="exp">
+                    <div>
+                        <span class="exp-place name">University of California San Diego</span>
+                        <div class="exp-role">Research Intern · advised by <a class="name" href="https://xyzhang.ucsd.edu/index.html" target="_blank">Xinyu Zhang</a> — adversarial ML</div>
+                    </div>
+                    <span class="exp-date">Jun 2023 – Dec 2024</span>
+                </div>
+            </div>
+            <a class="more-link" href="cv.html">See full CV <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <div class="footer-social">
+                <a href="mailto:davidx3@illinois.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/davidxia3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dx3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="leet" title="David Xia">|)/\/||) &gt;&lt;|/\</span>
+            <span class="footer-meta">© 2026 David Xia</span>
+        </div>
+    </footer>
+
 </body>
 </html>

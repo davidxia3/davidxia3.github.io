@@ -3,69 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papers</title>
+    <title>Publications — David Xia</title>
+    <meta name="description" content="Publications, manuscripts, and talks by David Xia.">
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+    <script src="site.js" defer></script>
 </head>
 <body>
-    <h2>Papers</h2>
-
-    <ul>
-        <li>
-            <div id="paper2" class="paper-title">[2025] RSK linear operators and the Vershik-Kerov-Logan-Shepp curve</div>
-            <div class="authors">Duy Phan, <b>David Xia</b></div>
-            <div class="status"><i>Submitted to <a href="https://www.combinatorics.org/" target="_blank">Electronic Journal of Combinatorics</a></i></div>
-            <div class="arxiv-links">
-                <a href="https://arxiv.org/abs/2504.05510" target="_blank">arXiv</a>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">David Xia</a>
+            <div class="nav-links">
+                <a href="papers.html" class="active">Publications</a>
+                <a href="cv.html">CV</a>
+                <a href="pictures.html" class="nav-hide-sm">Gallery</a>
+                <a href="misc.html" class="nav-hide-sm">Misc</a>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+                </button>
             </div>
-        </li>
-        <li>
-            <div id="paper1" class="paper-title">[2024] EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
-            <div class="authors">Jung-Woo Chang, Ke Sun, <b>David Xia</b>, Xinyu Zhang, Farinaz Koushanfar</div>
-            <div class="status"><i><a href="https://sp2025.ieee-security.org/" target="_blank">IEEE Symposium on Security and Privacy, 2025 </a></i></div>
-            <div class="arxiv-links">
-                <a href="https://arxiv.org/abs/2411.10034" target="_blank">arXiv</a>
-            </div>
-        </li>
-    </ul>
-
-
-
-
-    <h2>Workshop papers, Manuscripts, Notes</h2>
-
-    <ul>
-        <li>
-            <div id="paper7" class="paper-title">[2026] Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</div>
-            <div class="authors"><b>David Xia</b>, Ruizhong Qiu, Hanghang Tong</div>
-            <div class="status"><i>Manuscript in preparation</i></div>
-            <div class="status"><i><a href="docs/stochastic_fpi.pdf" target="_blank">PDF</a></i></div>
-        </li>
-        <li>
-            <div id="paper6" class="paper-title">[2026] Predictability in Major League Sports: Betting Odds versus Mathematical Models</div>
-            <div class="authors"><b>David Xia</b>, AJ Hildebrand</div>
-            <div class="status"><i>Submitted to the <a href="https://janeway.uncpress.org/ms/" target="_blank">Mathematics and Sports (MAS) Journal</a>
-            <div class="status"><i><a href="docs/predictability_paper.pdf" target="_blank">PDF</a></i></div>
-        </li>
-        <li>
-            <div id="paper5" class="paper-title">[2026] Algebraic Combinatorics Scribe Notes: The Cauchy Identity</div>
-            <div class="authors"><b>David Xia</b></div>
-            <div class="status"><i><a href="docs/cauchy_identity_scribe_notes.pdf" target="_blank">PDF</a></i></div>
-        </li>
-        <li>
-            <div id="paper4" class="paper-title">[2026] Algebraic Combinatorics Scribe Notes: Schur Polynomials</div>
-            <div class="authors"><b>David Xia</b>, Oren Akresh</div>
-            <div class="status"><i><a href="docs/schur_polynomial_scribe_notes.pdf" target="_blank">PDF</a></i></div>
-        </li>
-        <li>
-            <div id="paper3" class="paper-title">[2026] Revitalizing Local Democracy: A Human-Centered Audit of LLMs in City Council Journalism</div>
-            <div class="authors"><b>David Xia</b>, Chris Maury</div>
-            <div class="status"><i><a href="https://heal-workshop.github.io/" target="_blank">Human-centered Evaluation and Auditing of Language Models (HEAL) Workshop</a> at <a href="https://chi2026.acm.org/" target="_blank">CHI 2026</a>
-            <div class="status"><i><a href="docs/heal_paper.pdf" target="_blank">PDF</a></i></div>
-        </li>
-    </ul>
-
-    <nav>
-        <a href="index.html">Home</a>
+        </div>
     </nav>
+
+    <main class="wrap">
+
+        <header class="page-head">
+            <h1>Publications</h1>
+            <p>Peer-reviewed papers, manuscripts in progress, course notes, and selected talks. My name is shown in <strong>bold</strong>.</p>
+        </header>
+
+        <!-- ===== Peer-reviewed ===== -->
+        <h2 class="subhead">Peer-Reviewed &amp; Accepted</h2>
+        <div class="pub-list">
+            <article class="pub">
+                <span class="pub-year">2025</span>
+                <div>
+                    <div class="pub-title">RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</div>
+                    <div class="pub-authors"><span class="name">Duy Phan</span>, <span class="me">David Xia</span></div>
+                    <div class="pub-venue"><span class="badge">TO APPEAR</span> Electronic Journal of Combinatorics</div>
+                    <div class="link-row">
+                        <a class="chip arxiv" href="https://arxiv.org/abs/2504.05510" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2025</span>
+                <div>
+                    <div class="pub-title">EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
+                    <div class="pub-authors"><span class="name">Jung-Woo Chang</span>, <span class="name">Ke Sun</span>, <span class="me">David Xia</span>, <span class="name">Xinyu Zhang</span>, <span class="name">Farinaz Koushanfar</span></div>
+                    <div class="pub-venue"><span class="badge">PUBLISHED</span> IEEE Symposium on Security and Privacy 2025</div>
+                    <div class="link-row">
+                        <a class="chip arxiv" href="https://arxiv.org/abs/2411.10034" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ===== Workshop / Manuscripts / Notes ===== -->
+        <h2 class="subhead">Workshop Papers, Manuscripts &amp; Notes</h2>
+        <div class="pub-list">
+            <article class="pub">
+                <span class="pub-year">2026</span>
+                <div>
+                    <div class="pub-title">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</div>
+                    <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Ruizhong Qiu</span>, <span class="name">Hanghang Tong</span></div>
+                    <div class="pub-venue"><span class="badge">IN PREP</span> Manuscript in preparation</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/stochastic_fpi.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2026</span>
+                <div>
+                    <div class="pub-title">Predictability in Major League Sports: Betting Odds versus Mathematical Models</div>
+                    <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">AJ Hildebrand</span></div>
+                    <div class="pub-venue"><span class="badge">SUBMITTED</span> Mathematics and Sports (MAS) Journal</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/predictability_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2026</span>
+                <div>
+                    <div class="pub-title">Revitalizing Local Democracy: A Human-Centered Audit of LLMs in City Council Journalism</div>
+                    <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Chris Maury</span></div>
+                    <div class="pub-venue"><span class="badge">WORKSHOP</span> HEAL Workshop at CHI 2026</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/heal_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                        <a class="chip" href="https://heal-workshop.github.io/" target="_blank"><i class="fas fa-link"></i> Workshop</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2026</span>
+                <div>
+                    <div class="pub-title">Algebraic Combinatorics Scribe Notes: The Cauchy Identity</div>
+                    <div class="pub-authors"><span class="me">David Xia</span></div>
+                    <div class="pub-venue"><span class="badge">NOTES</span> Course scribe notes</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/cauchy_identity_scribe_notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2026</span>
+                <div>
+                    <div class="pub-title">Algebraic Combinatorics Scribe Notes: Schur Polynomials</div>
+                    <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Oren Akresh</span></div>
+                    <div class="pub-venue"><span class="badge">NOTES</span> Course scribe notes</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/schur_polynomial_scribe_notes.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- ===== Talks ===== -->
+        <h2 class="subhead">Selected Talks &amp; Posters</h2>
+        <div class="pub-list">
+            <article class="pub">
+                <span class="pub-year">2025</span>
+                <div>
+                    <div class="pub-title">LLMs for Extracting Agenda Items from City Council Meetings and Generating Newsworthy Headlines</div>
+                    <div class="pub-venue">CMU HCII REU Symposium</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/presentations/cmu_hcii_poster.pdf" target="_blank"><i class="fas fa-image"></i> Poster</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2025</span>
+                <div>
+                    <div class="pub-title">RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</div>
+                    <div class="pub-venue">Algebra, Geometry &amp; Combinatorics Day (Algecom) — presented by Duy Phan</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/presentations/algecom_poster.pdf" target="_blank"><i class="fas fa-image"></i> Poster</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2025</span>
+                <div>
+                    <div class="pub-title">Predictability in Major Sports Leagues: Betting Market vs. Model-Based Predictions</div>
+                    <div class="pub-venue">Joint Mathematics Meetings</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/presentations/jmm_2025_poster.pdf" target="_blank"><i class="fas fa-image"></i> Poster</a>
+                        <a class="chip" href="docs/programs/jmm_2025_program.pdf" target="_blank"><i class="fas fa-book"></i> Program</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2024</span>
+                <div>
+                    <div class="pub-title">Predictability in College Sports: Comparing the Accuracies of Prediction Models for College Football and Basketball</div>
+                    <div class="pub-venue">Rose-Hulman Undergraduate Math Conference — oral talk</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/presentations/rose_hulman_2024_presentation.pdf" target="_blank"><i class="fas fa-display"></i> Slides</a>
+                        <a class="chip" href="docs/programs/rose_hulman_2024_program.pdf" target="_blank"><i class="fas fa-book"></i> Program</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2024</span>
+                <div>
+                    <div class="pub-title">Predictability and Competitiveness in Sports Leagues</div>
+                    <div class="pub-venue">UIUC Undergraduate Research Symposium</div>
+                    <div class="link-row">
+                        <a class="chip" href="docs/presentations/spring_2024_poster.pdf" target="_blank"><i class="fas fa-image"></i> Poster</a>
+                        <a class="chip" href="docs/programs/urs_2024_program.pdf" target="_blank"><i class="fas fa-book"></i> Program</a>
+                    </div>
+                </div>
+            </article>
+            <article class="pub">
+                <span class="pub-year">2024</span>
+                <div>
+                    <div class="pub-title">Predictability in College Sports</div>
+                    <div class="pub-venue">Illinois Mathematics Lab Research Symposium</div>
+                </div>
+            </article>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer-inner">
+            <div class="footer-social">
+                <a href="mailto:davidx3@illinois.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/davidxia3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dx3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span class="footer-meta">© 2026 David Xia</span>
+        </div>
+    </footer>
+
 </body>
 </html>
