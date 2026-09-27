@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae — David Xia</title>
-    <meta name="description" content="Curriculum Vitae of David Xia — theoretical machine learning and reinforcement learning.">
+    <meta name="description" content="Curriculum Vitae of David Xia — reinforcement learning and foundation models.">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -32,9 +32,9 @@
 
         <header class="page-head">
             <h1>Curriculum Vitae</h1>
-            <p>Theoretical machine learning &amp; reinforcement learning · University of Illinois Urbana-Champaign</p>
+            <p>Reinforcement learning &amp; foundation models · University of Illinois Urbana-Champaign</p>
             <div class="cv-actions">
-                <a class="pill pill-primary" href="docs/david_xia_cv.pdf" target="_blank"><i class="fas fa-file-lines"></i> Open PDF</a>
+                <a class="pill pill-primary" href="docs/david_xia_cv_public.pdf" target="_blank"><i class="fas fa-file-lines"></i> Open PDF</a>
                 <a class="pill" href="mailto:davidx3@illinois.edu"><i class="fas fa-envelope"></i> davidx3@illinois.edu</a>
             </div>
         </header>
@@ -42,7 +42,7 @@
         <!-- ===== Research Interests ===== -->
         <section class="cv-section">
             <h2>Research Interests</h2>
-            <p>Theoretical ML, reinforcement learning, online learning, MDP function approximation, sample complexity.</p>
+            <p>Reinforcement learning, foundation models, LLM agents, RL theory.</p>
         </section>
 
         <!-- ===== Education ===== -->
@@ -68,12 +68,20 @@
             <h2>Papers</h2>
             <div class="pub-list">
                 <article class="pub">
+                    <span class="pub-year">2026</span>
+                    <div>
+                        <div class="pub-title">Benchmarking agentic optimizers</div>
+                        <div class="pub-note">Co-first author &middot; title withheld during double-blind review</div>
+                        <div class="pub-venue"><span class="badge">UNDER REVIEW</span> ICLR 2027</div>
+                    </div>
+                </article>
+                <article class="pub">
                     <span class="pub-year">2025</span>
                     <div>
                         <div class="pub-title">RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</div>
                         <div class="pub-authors"><span class="name">Duy Phan</span>, <span class="me">David Xia</span></div>
-                        <div class="pub-venue"><span class="badge">TO APPEAR</span> Electronic Journal of Combinatorics</div>
-                        <div class="link-row"><a class="chip arxiv" href="https://arxiv.org/abs/2504.05510" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a></div>
+                        <div class="pub-venue"><span class="badge">PUBLISHED</span> Electronic Journal of Combinatorics, 33(3), #P17</div>
+                        <div class="link-row"><a class="chip" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i3p17" target="_blank"><i class="fas fa-book-open"></i> Journal</a><a class="chip arxiv" href="https://arxiv.org/abs/2504.05510" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a></div>
                     </div>
                 </article>
                 <article class="pub">
@@ -82,7 +90,7 @@
                         <div class="pub-title">EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations</div>
                         <div class="pub-authors"><span class="name">Jung-Woo Chang</span>, <span class="name">Ke Sun</span>, <span class="me">David Xia</span>, <span class="name">Xinyu Zhang</span>, <span class="name">Farinaz Koushanfar</span></div>
                         <div class="pub-venue"><span class="badge">PUBLISHED</span> IEEE Symposium on Security and Privacy 2025</div>
-                        <div class="link-row"><a class="chip arxiv" href="https://arxiv.org/abs/2411.10034" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a></div>
+                        <div class="link-row"><a class="chip" href="https://ieeexplore.ieee.org/document/11023366/" target="_blank"><i class="fas fa-book-open"></i> IEEE</a><a class="chip arxiv" href="https://arxiv.org/abs/2411.10034" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a></div>
                     </div>
                 </article>
             </div>
@@ -97,7 +105,7 @@
                     <div>
                         <div class="pub-title">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</div>
                         <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Ruizhong Qiu</span>, <span class="name">Hanghang Tong</span></div>
-                        <div class="pub-venue"><span class="badge">IN PREP</span> Manuscript in preparation</div>
+                        <div class="pub-venue"><span class="badge">NOTE</span> Technical note</div>
                         <div class="link-row"><a class="chip" href="docs/stochastic_fpi.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a></div>
                     </div>
                 </article>
@@ -134,9 +142,8 @@
                 </div>
                 <div class="cv-entry-sub">Research Intern · advised by <a class="name" href="https://zhaoranwang.github.io/" target="_blank">Prof. Zhaoran Wang</a></div>
                 <ul>
-                    <li>Developed a closed-loop LLM meta-orchestrator agent for aircraft wing inverse design, where the agent diagnoses its own surrogate failures across iterative versions and emits corrective source code for the next optimization layer.</li>
-                    <li>Identified and systematically addressed seven structural failure modes of surrogate-based optimization — including surrogate exploitation, Gaussian trust collapse, family-specific exploitation, and single-objective specification gaming — building a unified taxonomy and corresponding defenses.</li>
-                    <li>Applied reinforcement-learning-style reasoning to the outer loop: the LLM agent classifies failure modes and upgrades its decision layer, achieving relative robustness gains validated against public RANS datasets (AirfRANS, SuperWing, ONERA CRM).</li>
+                    <li>Research on LLM agents as black-box optimizers: how agents propose candidate solutions, interpret feedback, and revise their search strategy across iterations.</li>
+                    <li>Co-first-authored paper under double-blind review at ICLR 2027. Further details withheld during the review period.</li>
                 </ul>
             </div>
 
@@ -151,7 +158,7 @@
                     <li>Conducted research in theoretical reinforcement learning, studying sample and computation efficient algorithms for online learning in finite-horizon Markov Decision Processes under function approximation and stochastic dynamics.</li>
                     <li>Used concentrability to develop the first sample and computation efficient algorithm for online reinforcement learning in stochastic-transition MDPs under the linear Q<sup>&pi;</sup> realizability assumption, resolving an open problem left by prior work restricted to deterministic dynamics.</li>
                     <li>Established a PAC sample complexity guarantee of Õ(d<sup>2</sup>H<sup>7</sup>C<sup>*</sup>/&epsilon;<sup>3</sup>) by combining techniques from offline and online reinforcement learning theory, dynamic programming, concentration analysis, and linear function approximation.</li>
-                    <li>Manuscript in preparation: <a href="docs/stochastic_fpi.pdf" target="_blank">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</a>.</li>
+                    <li>Technical note: <a href="docs/stochastic_fpi.pdf" target="_blank">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</a>.</li>
                 </ul>
             </div>
 
@@ -159,14 +166,14 @@
                 <img class="cv-entry-logo" src="images/logos/iclue_logo.png" alt="">
                 <div class="cv-entry-head">
                     <span class="cv-entry-title"><a class="name" href="https://ayong.web.illinois.edu/ICLUE.html" target="_blank">Illinois Combinatorics Lab for Undergraduate Experience (ICLUE)</a></span>
-                    <span class="cv-entry-date">Aug 2024 – present</span>
+                    <span class="cv-entry-date">Aug 2024 – May 2026</span>
                 </div>
                 <div class="cv-entry-sub">Research Intern · advised by <a class="name" href="https://ayong.web.illinois.edu/" target="_blank">Prof. Alexander Yong</a></div>
                 <ul>
                     <li>Proved a new asymptotic result that the probability that the Schensted insertion algorithm for a uniformly random permutation in S<sub>n</sub> exhibits a special "bumping" interaction converges to 1 as n approaches infinity.</li>
                     <li>Derived the result using rigorous probability bounds on the RSK linear operator by leveraging the Vershik-Kerov-Logan-Shepp limit shape curve as the central analytic tool.</li>
                     <li>Developed proofs spanning real analysis (uniform convergence, limit arguments), probability theory (concentration inequalities, convergence in probability), and asymptotic analysis (bounding combinatorial quantities in the large-n regime).</li>
-                    <li>Paper to appear in the <a href="https://www.combinatorics.org/" target="_blank">Electronic Journal of Combinatorics</a>.</li>
+                    <li>Paper published in the <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i3p17" target="_blank">Electronic Journal of Combinatorics</a>, 33(3), #P17.</li>
                 </ul>
             </div>
 
@@ -242,9 +249,11 @@
         <section class="cv-section">
             <h2>Relevant Coursework</h2>
             <div class="cv-coursework">
-                <p><span class="cat">CS:</span> Statistical Reinforcement Learning, Machine Learning, NLP, Deep Learning, Algorithms, Numerical Methods, Numerical Analysis</p>
-                <p><span class="cat">Math:</span> Honors Real Analysis, Graph Theory, Combinatorics, Abstract Linear Algebra, Abstract Algebra I–II, Algebraic Combinatorics, Linear Programming</p>
-                <p><span class="cat">Stats:</span> Stochastic Processes, Applied Bayesian Analysis, Survival Analysis</p>
+                <p class="cw-note">Highlighted courses are graduate-level.</p>
+                <p><span class="cat">In progress (Fall 2026):</span> <span class="grad">Statistical Reinforcement Learning</span>, <span class="grad">Randomized Algorithms</span></p>
+                <p><span class="cat">CS:</span> Machine Learning, Deep Learning, Natural Language Processing, Algorithms, Numerical Analysis, Numerical Methods</p>
+                <p><span class="cat">Math:</span> Honors Real Analysis, <span class="grad">Algebraic Combinatorics</span>, Abstract Linear Algebra, Combinatorics, Graph Theory, Abstract Algebra, Complex Variables</p>
+                <p><span class="cat">Stats:</span> Bayesian Analysis</p>
             </div>
         </section>
 

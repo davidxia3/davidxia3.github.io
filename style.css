@@ -383,6 +383,7 @@ section { margin-top: 4.5rem; }
 }
 .pub-authors { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.2rem; }
 .pub-authors .me { color: var(--text); font-weight: 600; }
+.pub-note { color: var(--text-muted); font-size: 0.83rem; margin-bottom: 0.25rem; }
 .pub-venue {
   font-family: var(--font-serif);
   font-style: italic;
@@ -512,7 +513,7 @@ section { margin-top: 4.5rem; }
   font-weight: 500;
   margin-bottom: 0.7rem;
 }
-.page-head p { color: var(--text-muted); max-width: 52ch; }
+.page-head p { color: var(--text-muted); max-width: 100%; }
 
 /* ---------- CV ---------- */
 .cv-actions { display: flex; gap: 10px; margin-top: 1.6rem; }
@@ -574,6 +575,14 @@ section { margin-top: 4.5rem; }
 
 .cv-coursework p { margin-bottom: 0.7rem; }
 .cv-coursework .cat { font-weight: 600; color: var(--text); }
+.cv-coursework .grad {
+  background: var(--accent-soft);
+  color: var(--accent-label);
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.cv-coursework .cw-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.55rem; }
 
 .award-list { list-style: none; padding: 0; margin: 0; }
 .award-list li {

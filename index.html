@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Xia</title>
-    <meta name="description" content="David Xia — undergraduate researcher in theoretical machine learning and reinforcement learning at the University of Illinois Urbana-Champaign.">
+    <meta name="description" content="David Xia — undergraduate researcher in reinforcement learning and foundation models at the University of Illinois Urbana-Champaign.">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -35,14 +35,14 @@
             <div class="hero-text">
                 <span class="hero-eyebrow">B.S. Computer Science · Mathematics · Statistics</span>
                 <h1>David Xia <span class="cn-name">夏锦源</span></h1>
-                <p class="hero-tagline">Theoretical machine learning &amp; reinforcement learning</p>
+                <p class="hero-tagline">Reinforcement learning &amp; foundation models</p>
                 <p class="hero-bio">
                     I'm a senior at the University of Illinois Urbana-Champaign studying
-                    computer science, mathematics, and statistics. I work on the theoretical
-                    foundations of machine learning, and I'm applying to CS PhD programs for fall 2027.
+                    computer science, mathematics, and statistics. I work on reinforcement
+                    learning and foundation models, and I'm applying to CS PhD programs for fall 2027.
                 </p>
                 <div class="pill-row">
-                    <a class="pill pill-primary" href="docs/david_xia_cv.pdf" target="_blank"><i class="fas fa-file-lines"></i> Curriculum Vitae</a>
+                    <a class="pill pill-primary" href="docs/david_xia_cv_public.pdf" target="_blank"><i class="fas fa-file-lines"></i> Curriculum Vitae</a>
                     <a class="pill" href="mailto:davidx3@illinois.edu"><i class="fas fa-envelope"></i> Email</a>
                     <a class="pill" href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
                     <a class="pill" href="https://github.com/davidxia3" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -58,19 +58,17 @@
         <section id="about" class="reveal">
             <div class="section-label">About</div>
             <p class="lede">
-                My research centers on the theory of sequential decision-making: reinforcement
-                learning, online learning, and function approximation in Markov decision processes.
-                I'm drawn to questions of sample and computational complexity — when efficient
-                learning is provably possible, and the algorithms that achieve it. Alongside this
-                core focus, I've worked across combinatorics, adversarial machine learning, and
-                human-centered evaluation of large language models.
+                My research centers on reinforcement learning and foundation models: how agents
+                search, plan, and act reliably in complex environments. I also work on the theory of
+                sequential decision-making, including sample-efficient learning and function
+                approximation in Markov decision processes. I've also previously worked on algebraic
+                combinatorics.
             </p>
             <div class="tag-row">
                 <span class="tag">Reinforcement Learning</span>
-                <span class="tag">Online Learning</span>
-                <span class="tag">MDP Function Approximation</span>
-                <span class="tag">Sample Complexity</span>
-                <span class="tag">Learning Theory</span>
+                <span class="tag">Foundation Models</span>
+                <span class="tag">LLM Agents</span>
+                <span class="tag">RL Theory</span>
             </div>
         </section>
 
@@ -78,6 +76,10 @@
         <section id="news" class="reveal">
             <div class="section-label">News</div>
             <ul class="news-list">
+                <li class="news-item">
+                    <span class="news-date">Jul 2026</span>
+                    <span class="news-body"><em>RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</em> was published in the <a class="name" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i3p17" target="_blank">Electronic Journal of Combinatorics</a>.</span>
+                </li>
                 <li class="news-item">
                     <span class="news-date">May 2026</span>
                     <span class="news-body">Started a research internship at <strong class="name">Northwestern University</strong> with <a class="name" href="https://zhaoranwang.github.io/" target="_blank">Prof. Zhaoran Wang</a> on agentic reinforcement learning.</span>
@@ -87,20 +89,12 @@
                     <span class="news-body">Presented our LLM-journalism audit at the <a class="name" href="https://heal-workshop.github.io/" target="_blank">HEAL workshop</a> at <strong class="name">CHI 2026</strong> in Barcelona.</span>
                 </li>
                 <li class="news-item">
-                    <span class="news-date">Jun 2026</span>
-                    <span class="news-body"><em>RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</em> was accepted — to appear in the <a class="name" href="https://www.combinatorics.org/" target="_blank">Electronic Journal of Combinatorics</a>.</span>
-                </li>
-                <li class="news-item">
                     <span class="news-date">Feb 2026</span>
                     <span class="news-body">Joined the <a class="name" href="https://www.idea-isail.com/index.html" target="_blank">iDEA-iSAIL Lab</a> at <span class="name">UIUC</span> with <a class="name" href="http://tonghanghang.org/" target="_blank">Prof. Hanghang Tong</a>, working on theoretical RL.</span>
                 </li>
                 <li class="news-item">
                     <span class="news-date">May 2025</span>
                     <span class="news-body"><em>EveGuard</em> appeared at the <strong class="name">IEEE Symposium on Security and Privacy 2025</strong>.</span>
-                </li>
-                <li class="news-item">
-                    <span class="news-date">Jan 2025</span>
-                    <span class="news-body">Presented sports-predictability research at the <strong class="name">Joint Mathematics Meetings</strong>.</span>
                 </li>
             </ul>
         </section>
@@ -112,9 +106,17 @@
                 <article class="pub">
                     <span class="pub-year">2026</span>
                     <div>
+                        <div class="pub-title">Benchmarking agentic optimizers</div>
+                        <div class="pub-note">Co-first author &middot; title withheld during double-blind review</div>
+                        <div class="pub-venue"><span class="badge">UNDER REVIEW</span> ICLR 2027</div>
+                    </div>
+                </article>
+                <article class="pub">
+                    <span class="pub-year">2026</span>
+                    <div>
                         <div class="pub-title">Frozen Policy Iteration for MDPs with Stochastic Transitions under Linear Q<sup>&pi;</sup> Realizability</div>
                         <div class="pub-authors"><span class="me">David Xia</span>, <span class="name">Ruizhong Qiu</span>, <span class="name">Hanghang Tong</span></div>
-                        <div class="pub-venue"><span class="badge">IN PREP</span> Manuscript in preparation</div>
+                        <div class="pub-venue"><span class="badge">NOTE</span> Technical note</div>
                         <div class="link-row">
                             <a class="chip" href="docs/stochastic_fpi.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
                         </div>
@@ -125,8 +127,9 @@
                     <div>
                         <div class="pub-title">RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</div>
                         <div class="pub-authors"><span class="name">Duy Phan</span>, <span class="me">David Xia</span></div>
-                        <div class="pub-venue"><span class="badge">TO APPEAR</span> Electronic Journal of Combinatorics</div>
+                        <div class="pub-venue"><span class="badge">PUBLISHED</span> Electronic Journal of Combinatorics, 33(3), #P17</div>
                         <div class="link-row">
+                            <a class="chip" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i3p17" target="_blank"><i class="fas fa-book-open"></i> Journal</a>
                             <a class="chip arxiv" href="https://arxiv.org/abs/2504.05510" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
                         </div>
                     </div>
@@ -138,6 +141,7 @@
                         <div class="pub-authors"><span class="name">Jung-Woo Chang</span>, <span class="name">Ke Sun</span>, <span class="me">David Xia</span>, <span class="name">Xinyu Zhang</span>, <span class="name">Farinaz Koushanfar</span></div>
                         <div class="pub-venue"><span class="badge">PUBLISHED</span> IEEE Symposium on Security and Privacy 2025</div>
                         <div class="link-row">
+                            <a class="chip" href="https://ieeexplore.ieee.org/document/11023366/" target="_blank"><i class="fas fa-book-open"></i> IEEE</a>
                             <a class="chip arxiv" href="https://arxiv.org/abs/2411.10034" target="_blank"><i class="fas fa-file-lines"></i> arXiv</a>
                         </div>
                     </div>
