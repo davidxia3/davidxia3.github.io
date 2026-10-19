@@ -533,6 +533,7 @@ section { margin-top: 4.5rem; }
 
 .cv-entry { margin-bottom: 1.8rem; position: relative; overflow: hidden; min-height: 140px; }
 .cv-entry:last-child { margin-bottom: 0; }
+.cv-entry-compact { min-height: 0; }
 .cv-entry-logo {
   position: absolute;
   right: -6px;
