@@ -2,124 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
     <title>Misc — David Xia</title>
-    <meta name="description" content="Beyond research — David Xia's cat, Pokémon teams, and photos.">
+    <meta name="description" content="Beyond research — David Xia&#x27;s cat, Pokémon teams, and photos.">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script>document.documentElement.classList.add('js');(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
-    <script src="site.js" defer></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="index.html" class="nav-brand">David Xia</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="papers.html">Publications</a>
-                <a href="cv.html">CV</a>
-                <a href="pictures.html" class="nav-hide-sm">Gallery</a>
-                <a href="misc.html" class="active nav-hide-sm">Misc</a>
-                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">
-                    <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
-                </button>
-            </div>
-        </div>
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#cv">CV</a>
+        <a href="pictures.html">Gallery</a>
+        <a href="misc.html" aria-current="page">Misc</a>
     </nav>
+    <main>
 
-    <main class="wrap">
-
-        <header class="page-head">
-            <h1>Miscellaneous</h1>
-        </header>
-
-        <!-- ===== Cat ===== -->
-        <section class="misc-block">
-            <h3>King</h3>
-            <div class="misc-grid-3">
-                <img src="misc/king/king1.jpg" alt="King the cat">
-                <img src="misc/king/king2.jpg" alt="King the cat">
-                <img src="misc/king/king3.jpg" alt="King the cat">
-                <img src="misc/king/king4.jpg" alt="King the cat">
-                <img src="misc/king/king5.jpg" alt="King the cat">
-                <img src="misc/king/king6.jpg" alt="King the cat">
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <!-- ===== Pokémon rank ===== -->
-        <section class="misc-block">
-            <h3>Pokémon Showdown</h3>
-            <p class="sub">I reached rank 99 on the global Gen 9 Random Battles ladder on 30 May 2026.</p>
-            <img class="rank-img" src="misc/top500.png" alt="Top 500 ladder ranking">
-        </section>
-
-        <hr class="divider">
-
-        <!-- ===== Favorite team ===== -->
-        <section class="misc-block">
-            <h3>Favorite Pokémon team</h3>
-            <div class="misc-grid-3 poke-grid">
-                <img src="misc/natdex/samurott-hisui.gif" alt="Hisuian Samurott">
-                <img src="misc/natdex/absol-mega.gif" alt="Mega Absol">
-                <img src="misc/natdex/lycanroc.gif" alt="Lycanroc">
-                <img src="misc/natdex/ninetales.gif" alt="Ninetales">
-                <img src="misc/natdex/reuniclus.gif" alt="Reuniclus">
-                <img src="misc/natdex/lugia.gif" alt="Lugia">
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <!-- ===== Ancient Chinese history ===== -->
-        <section class="misc-block">
-            <h3>Ancient Chinese history</h3>
-            <p class="sub">I also enjoy studying ancient Chinese history. Below is a family tree I created based on information from <em>Shiji</em>.</p>
-            <div class="family-tree-wrap">
-                <img src="misc/family_tree.svg" alt="Family tree based on Shiji">
-            </div>
-            <div class="link-row" style="margin-top: 0.8rem;">
-                <a class="chip" href="misc/family_tree.svg" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i> Open in new tab</a>
-            </div>
-        </section>
-
-        <hr class="divider">
-
-        <!-- ===== Personal photos ===== -->
-        <section class="misc-block">
-            <h3>Pictures I like</h3>
-            <div class="photo-grid">
-                <img src="misc/personal_pics/suit.png" alt="">
-                <img src="misc/personal_pics/mtsoledad1.png" alt="">
-                <img src="misc/personal_pics/yukata.png" alt="">
-                <img src="misc/personal_pics/mirror.png" alt="">
-                <img src="misc/personal_pics/jiufen2.jpg" alt="">
-                <img src="misc/personal_pics/taipingshan.jpg" alt="">
-                <img src="misc/personal_pics/tongling.png" alt="">
-                <img src="misc/personal_pics/zl.jpg" alt="">
-                <img src="misc/personal_pics/hatake.png" alt="">
-                <img src="misc/personal_pics/disney.png" alt="">
-                <img src="misc/personal_pics/joes.png" alt="">
-                <img src="misc/personal_pics/lone.png" alt="">
-            </div>
-        </section>
+<header class="page-head">
+<h1>Miscellaneous</h1>
+</header>
+<!-- ===== Cat ===== -->
+<section class="misc-block">
+<h2>King</h2>
+<div class="misc-grid-3">
+<img alt="King the cat" loading="lazy" src="misc/king/king1.jpg"/>
+<img alt="King the cat" loading="lazy" src="misc/king/king2.jpg"/>
+<img alt="King the cat" loading="lazy" src="misc/king/king3.jpg"/>
+<img alt="King the cat" loading="lazy" src="misc/king/king4.jpg"/>
+<img alt="King the cat" loading="lazy" src="misc/king/king5.jpg"/>
+<img alt="King the cat" loading="lazy" src="misc/king/king6.jpg"/>
+</div>
+</section>
+<hr class="divider"/>
+<!-- ===== Pokémon rank ===== -->
+<section class="misc-block">
+<h2>Pokémon Showdown</h2>
+<p class="sub">I reached rank 99 on the global Gen 9 Random Battles ladder on 30 May 2026.</p>
+<img alt="Top 500 ladder ranking" class="rank-img" loading="lazy" src="misc/top500.png"/>
+</section>
+<hr class="divider"/>
+<!-- ===== Favorite team ===== -->
+<section class="misc-block">
+<h2>Favorite Pokémon team</h2>
+<div class="misc-grid-3 poke-grid">
+<img alt="Hisuian Samurott" loading="lazy" src="misc/natdex/samurott-hisui.gif"/>
+<img alt="Mega Absol" loading="lazy" src="misc/natdex/absol-mega.gif"/>
+<img alt="Lycanroc" loading="lazy" src="misc/natdex/lycanroc.gif"/>
+<img alt="Ninetales" loading="lazy" src="misc/natdex/ninetales.gif"/>
+<img alt="Reuniclus" loading="lazy" src="misc/natdex/reuniclus.gif"/>
+<img alt="Lugia" loading="lazy" src="misc/natdex/lugia.gif"/>
+</div>
+</section>
+<hr class="divider"/>
+<!-- ===== Ancient Chinese history ===== -->
+<section class="misc-block">
+<h2>Ancient Chinese history</h2>
+<p class="sub">I also enjoy studying ancient Chinese history. Below is a family tree I created based on information from <em>Shiji</em>.</p>
+<div class="family-tree-wrap">
+<img alt="Family tree based on Shiji" loading="lazy" src="misc/family_tree.svg"/>
+</div>
+<div class="link-row">
+<a class="chip" href="misc/family_tree.svg" rel="noopener noreferrer" target="_blank"> Open in new tab</a>
+</div>
+</section>
+<hr class="divider"/>
+<!-- ===== Personal photos ===== -->
+<section class="misc-block">
+<h2>Pictures I like</h2>
+<div class="photo-grid">
+<img alt="" loading="lazy" src="misc/personal_pics/suit.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/mtsoledad1.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/yukata.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/mirror.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/jiufen2.jpg"/>
+<img alt="" loading="lazy" src="misc/personal_pics/taipingshan.jpg"/>
+<img alt="" loading="lazy" src="misc/personal_pics/tongling.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/zl.jpg"/>
+<img alt="" loading="lazy" src="misc/personal_pics/hatake.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/disney.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/joes.png"/>
+<img alt="" loading="lazy" src="misc/personal_pics/lone.png"/>
+</div>
+</section>
 
     </main>
-
-    <footer class="footer">
-        <div class="wrap footer-inner">
-            <div class="footer-social">
-                <a href="mailto:davidx3@illinois.edu" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://scholar.google.com/citations?hl=en&user=uScYa6cAAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://github.com/davidxia3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dx3/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <span class="leet" title="David Xia">|)/\/||) &gt;&lt;|/\</span>
-            <span class="footer-meta">© 2026 David Xia</span>
-        </div>
-    </footer>
-
+    <footer>© 2026 David Xia</footer>
 </body>
 </html>
