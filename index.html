@@ -11,9 +11,9 @@
 </head>
 <body>
     <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html" aria-current="page" target="_blank" rel="noopener noreferrer">Home</a>
-        <a href="index.html#publications" target="_blank" rel="noopener noreferrer">Publications</a>
-        <a href="index.html#cv" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#publications">Publications</a>
+        <a href="#cv">CV</a>
         <a href="pictures.html" target="_blank" rel="noopener noreferrer">Gallery</a>
         <a href="misc.html" target="_blank" rel="noopener noreferrer">Misc</a>
     </nav>
@@ -31,7 +31,7 @@
                     <a href="https://scholar.google.com/citations?hl=en&amp;user=uScYa6cAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
                     <a href="https://github.com/davidxia3" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.linkedin.com/in/dx3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="docs/david_xia_cv_public.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+                    <a href="docs/david_xia_cv.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
                 </p>
             </div>
             <img class="portrait" src="images/david.png" alt="David Xia" width="160" height="200">
@@ -49,6 +49,10 @@
         <section id="news">
             <h2>News</h2>
 <ul class="news-list">
+<li class="news-item">
+<span class="news-date">Nov 2026</span>
+<span class="news-body"><em>Predictability in Major League Sports: Betting Odds versus Mathematical Models</em> was accepted for publication in <a class="name" href="https://doi.org/10.5149/ms.4631" target="_blank" rel="noopener noreferrer">Mathematics and Sports</a>.</span>
+</li>
 <li class="news-item">
 <span class="news-date">Jul 2026</span>
 <span class="news-body"><em>RSK linear operators and the Vershik–Kerov–Logan–Shepp curve</em> was published in the <a class="name" href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v33i3p17" target="_blank" rel="noopener noreferrer">Electronic Journal of Combinatorics</a>.</span>
@@ -76,9 +80,10 @@
             <h2>Publications</h2>
             <h3>Under Review</h3>
             <article class="publication">
-                <h4>Designing and benchmarking agentic optimizers</h4>
-                <div class="note">First author · title withheld during double-blind review</div>
-                <div class="venue">Under review at ICLR 2027.</div>
+                <h4>WingBench: Benchmarking How AI Agents Search for Better Designs</h4>
+                <div class="authors"><span class="name">Yiming Yang</span><sup>*</sup>, <strong>David Xia</strong><sup>*</sup>, <span class="name">Jisen Li</span>, <span class="name">Yuqing Jian</span>, <span class="name">Yunjia Yang</span>, <span class="name">Koray Aydin</span>, <span class="name">Zhaoran Wang</span></div>
+                <div class="note"><sup>*</sup>Equal contribution</div>
+                <div class="venue">Under review at ICLR 2027. <a href="https://arxiv.org/abs/2611.28418" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
             </article>
             <h3>Journal &amp; Conference Publications</h3>
             <article class="publication">
@@ -112,7 +117,7 @@
 
         <section id="cv">
             <h2>Curriculum Vitae</h2>
-            <p><a href="docs/david_xia_cv_public.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a></p>
+            <p><a href="docs/david_xia_cv.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a></p>
 <section class="cv-section">
 <h3>Education</h3>
 <div class="cv-entry">
@@ -139,8 +144,9 @@
 </div>
 <div class="cv-entry-sub">Advised by <a class="name" href="https://zhaoranwang.github.io/" target="_blank" rel="noopener noreferrer">Prof. Zhaoran Wang</a></div>
 <ul>
-<li>Developed and evaluated language model agents as black-box optimizers, studying how they propose solutions, interpret evaluation results, and revise their search strategies.</li>
-<li>First author of a paper under review at ICLR 2027. Project details withheld during double-blind review.</li>
+<li>Developed <a href="https://arxiv.org/abs/2611.28418" target="_blank" rel="noopener noreferrer">WingBench</a>, a benchmark of AI agents and optimizers for aircraft wing design using expensive physics simulations, including evaluations that fail midway.</li>
+<li>Built the evaluation pipeline and agents with Reflexion-inspired reflection and RAFA-inspired multistep planning. Found that a general-purpose research agent can rival specialized optimizers, while added reasoning structure does not consistently improve search.</li>
+<li>Led the release of code and materials. Co-first author on the ICLR 2027 submission.</li>
 </ul>
 </div>
 <div class="cv-entry">
