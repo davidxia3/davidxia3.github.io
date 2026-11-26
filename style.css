@@ -42,14 +42,6 @@ ul { padding-left: 22px; }
 .publication.media-row > .entry-media { grid-area: media; }
 .entry-content { min-width: 0; }
 .entry-media { width: 100%; min-height: 120px; display: flex; align-items: center; justify-content: center; }
-/* CV logos sit behind full-width text without reserving a separate column. */
-.cv-entry.logo-entry { position: relative; isolation: isolate; min-height: 140px; }
-.cv-entry.logo-entry > .entry-content { position: relative; z-index: 1; }
-.cv-entry.logo-entry > .entry-media { position: absolute; z-index: 0; top: 50%; right: 0; transform: translateY(-50%); width: 200px; height: 160px; max-height: 100%; min-height: 0; justify-content: flex-end; opacity: .18; pointer-events: none; user-select: none; }
-.organization-logo { width: 100%; height: 100%; max-height: 140px; object-fit: contain; object-position: right center; }
-.logo-symbol { width: auto; max-width: 100%; height: 140px; }
-.logo-square { width: 140px; height: 140px; }
-.logo-northwestern { width: 180px; height: 180px; max-height: 100%; }
 .wing-preview { position: relative; min-height: 0; aspect-ratio: 4 / 3; }
 .wing-project-link { position: absolute; inset: 0; display: block; }
 .wing-poster, #wing-preview-canvas { position: absolute; width: 100%; height: 100%; object-fit: contain; }
@@ -107,7 +99,6 @@ footer { margin-top: 48px; padding: 18px 0 10px; border-top: 1px solid #ddd; col
   main > section { margin-top: 52px; }
   .publication.media-row { grid-template-columns: minmax(0, 1fr) 84px; gap: 16px; }
   .publication.media-row > .entry-media { min-height: 84px; }
-  .cv-entry.logo-entry > .entry-media { width: 160px; height: 140px; opacity: .14; }
   .wing-preview { min-height: 0; aspect-ratio: 1; }
   .gallery { columns: 1; }
 }
@@ -116,7 +107,6 @@ footer { margin-top: 48px; padding: 18px 0 10px; border-top: 1px solid #ddd; col
   .site-nav, footer { display: none; }
   a { color: #222; }
   .publication, .cv-entry { break-inside: avoid; }
-  .cv-entry.logo-entry > .entry-media { display: none; }
   #wing-preview-canvas, .wing-motion { display: none; }
   .wing-preview.is-ready .wing-poster { visibility: visible; }
 }
