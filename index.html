@@ -8,6 +8,7 @@
     <meta name="description" content="David Xia — UIUC researcher in reinforcement learning and language model agents, with current interests in AI for science and multifidelity optimization.">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="wing-preview.js" defer></script>
 </head>
 <body>
     <nav class="site-nav" aria-label="Main navigation">
@@ -79,11 +80,22 @@
         <section id="publications">
             <h2>Publications</h2>
             <h3>Under Review</h3>
-            <article class="publication">
+            <article class="publication media-row">
+                <div class="entry-media wing-preview" id="wing-preview">
+                    <a class="wing-project-link" href="https://davidxia3.github.io/wingbench/" target="_blank" rel="noopener noreferrer" aria-label="Visit the WingBench project page">
+                        <img class="wing-poster" src="images/wingbench/wing-fallback.svg" alt="A wing design from WingBench" width="860" height="600" loading="lazy">
+                        <canvas id="wing-preview-canvas" width="400" height="300" aria-hidden="true"></canvas>
+                    </a>
+                    <button class="wing-motion" type="button" aria-label="Pause wing animation" title="Pause wing animation" hidden>
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                    </button>
+                </div>
+                <div class="entry-content">
                 <h4>WingBench: Benchmarking How AI Agents Search for Better Designs</h4>
                 <div class="authors"><span class="name">Yiming Yang</span><sup>*</sup>, <strong>David Xia</strong><sup>*</sup>, <span class="name">Jisen Li</span>, <span class="name">Yuqing Jian</span>, <span class="name">Yunjia Yang</span>, <span class="name">Koray Aydin</span>, <span class="name">Zhaoran Wang</span></div>
                 <div class="note"><sup>*</sup>Equal contribution</div>
-                <div class="venue">Under review at ICLR 2027. <a href="https://arxiv.org/abs/2611.28418" target="_blank" rel="noopener noreferrer">[arXiv]</a></div>
+                <div class="venue">Under review at ICLR 2027. <a href="https://arxiv.org/abs/2611.28418" target="_blank" rel="noopener noreferrer">[arXiv]</a> <a href="https://davidxia3.github.io/wingbench/" target="_blank" rel="noopener noreferrer">[Project]</a></div>
+                </div>
             </article>
             <h3>Journal &amp; Conference Publications</h3>
             <article class="publication">
@@ -120,8 +132,11 @@
             <p><a href="docs/david_xia_cv.pdf" target="_blank" rel="noopener noreferrer">Download CV (PDF)</a></p>
 <section class="cv-section">
 <h3>Education</h3>
-<div class="cv-entry">
-
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-symbol" src="images/logos/illinois-block-i.png" alt="University of Illinois Urbana-Champaign" width="243" height="351" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title">University of Illinois Urbana-Champaign</span>
 <span class="cv-entry-date">Aug 2023 – May 2027 (expected)</span>
@@ -133,11 +148,15 @@
 <li>B.S. in Statistics</li>
 </ul>
 </div>
+</div>
 </section>
 <section class="cv-section">
 <h3>Research Experience</h3>
-<div class="cv-entry">
-
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-wordmark" src="images/logos/northwestern-wordmark.svg" alt="Northwestern University" width="263" height="33" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><span class="name">Northwestern University</span></span>
 <span class="cv-entry-date">May 2026 – present</span>
@@ -149,8 +168,12 @@
 <li>Led the release of code and materials. Co-first author on the ICLR 2027 submission.</li>
 </ul>
 </div>
-<div class="cv-entry">
-
+</div>
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-wordmark" src="images/logos/idea-isail.png" alt="iDEA-iSAIL Lab" width="1662" height="738" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><a class="name" href="https://www.idea-isail.com/index.html" target="_blank" rel="noopener noreferrer">iDEA-iSAIL Lab</a></span>
 <span class="cv-entry-date">Feb 2026 – present</span>
@@ -162,8 +185,12 @@
 <li>Currently investigating an algorithm for deterministic MDPs with improved sample-complexity guarantees, while extending the analysis to broader settings.</li>
 </ul>
 </div>
-<div class="cv-entry">
-
+</div>
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-square" src="images/logos/illinois-mathematics.png" alt="University of Illinois Department of Mathematics" width="447" height="447" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><a class="name" href="https://iml.math.illinois.edu/" target="_blank" rel="noopener noreferrer">Illinois Geometry Lab</a></span>
 <span class="cv-entry-date">Jan 2024 – May 2026</span>
@@ -174,8 +201,12 @@
 <li>Paper accepted for publication in Mathematics and Sports (MAS).</li>
 </ul>
 </div>
-<div class="cv-entry">
-
+</div>
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-symbol" src="images/logos/illinois-block-i.png" alt="University of Illinois Urbana-Champaign" width="243" height="351" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><a class="name" href="https://ayong.web.illinois.edu/ICLUE.html" target="_blank" rel="noopener noreferrer">Illinois Combinatorics Lab for Undergraduate Experience (ICLUE)</a></span>
 <span class="cv-entry-date">Aug 2024 – May 2026</span>
@@ -185,8 +216,12 @@
 <li>Proved asymptotic probability bounds for Schensted insertion and RSK linear operators using the Vershik-Kerov-Logan-Shepp limit shape curve. Published in the <em>Electronic Journal of Combinatorics</em> in 2026.</li>
 </ul>
 </div>
-<div class="cv-entry">
-
+</div>
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-square" src="images/logos/carnegie-mellon.png" alt="Carnegie Mellon University" width="600" height="600" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><a class="name" href="https://www.cs.cmu.edu/~jbigham/" target="_blank" rel="noopener noreferrer">Carnegie Mellon University, HCII</a></span>
 <span class="cv-entry-date">May 2025 – Feb 2026</span>
@@ -197,8 +232,12 @@
 <li>Led crowdsourced evaluation of headline quality and topic prioritization. Presented the work at the HEAL workshop at CHI 2026.</li>
 </ul>
 </div>
-<div class="cv-entry">
-
+</div>
+<div class="cv-entry media-row">
+<div class="entry-media">
+<img class="organization-logo logo-wordmark" src="images/logos/uc-san-diego.png" alt="University of California San Diego" width="510" height="102" loading="lazy" decoding="async">
+</div>
+<div class="entry-content">
 <div class="cv-entry-head">
 <span class="cv-entry-title"><a class="name" href="https://xyzhang.ucsd.edu/index.html" target="_blank" rel="noopener noreferrer">University of California San Diego</a></span>
 <span class="cv-entry-date">Jun 2023 – Dec 2024</span>
@@ -208,6 +247,7 @@
 <li>Implemented EveGuard's domain-translation model for estimating eavesdropped audio, enabling end-to-end training of protective audio perturbations with limited data.</li>
 <li>The resulting system achieved over 97% protection against tested audio classifiers while preserving audio quality. Published at IEEE Security and Privacy 2025.</li>
 </ul>
+</div>
 </div>
 </section>
 <section class="cv-section">
